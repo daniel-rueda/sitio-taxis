@@ -35,24 +35,25 @@ static DRDataModel *_sharedInstance = nil;
     return self;
 }
 
-- (void)sitios
+- (NSFetchedResultsController *)sitios
 {
-    
+    return nil;
 }
 
-- (void)sitiosConCodigoPostal:(NSString *)codigoPostal
+- (NSFetchedResultsController *)sitiosConCodigoPostal:(NSString *)codigoPostal
 {
-    
+    return nil;
 }
 
-- (void)sitiosConColonia:(NSString *)colonia
+- (NSFetchedResultsController *)sitiosConColonia:(NSString *)colonia
 {
-    
+    return nil;
 }
 
-- (void)sitiosCercanosUbicacion:(CLLocation *)location
+- (NSFetchedResultsController *)sitiosCercanosUbicacion:(CLLocation *)location 
+                                        distanciaMaxima:(NSNumber *)distancia
 {
-    
+    return nil;
 }
 
 @end

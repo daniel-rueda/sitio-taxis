@@ -8,14 +8,16 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreLocation/CoreLocation.h>
+#import <CoreData/CoreData.h>
 
 @interface DRDataModel : NSObject
 
 + (DRDataModel *)sharedModel;
 
-- (void)sitios;
-- (void)sitiosConCodigoPostal:(NSString *)codigoPostal;
-- (void)sitiosConColonia:(NSString *)colonia;
-- (void)sitiosCercanosUbicacion:(CLLocation *)location;
+- (NSFetchedResultsController *)sitios;
+- (NSFetchedResultsController *)sitiosConCodigoPostal:(NSString *)codigoPostal;
+- (NSFetchedResultsController *)sitiosConColonia:(NSString *)colonia;
+- (NSFetchedResultsController *)sitiosCercanosUbicacion:(CLLocation *)location
+                                        distanciaMaxima:(NSNumber *)distancia;
 
 @end
