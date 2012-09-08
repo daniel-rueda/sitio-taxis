@@ -7,6 +7,8 @@
 //
 
 #import "DRTableViewMapControllerViewController.h"
+#import "DRMapSitioPinAnnotation.h"
+#import "Ubicacion.h"
 
 @interface DRTableViewMapControllerViewController ()
 
@@ -28,6 +30,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    Ubicacion *pruebaDeUbicacion;
+    CLLocationCoordinate2D theCoordinate1;
+    theCoordinate1.latitude = 19.402064;
+    theCoordinate1.longitude = -99.166106;
+    
+    DRMapSitioPinAnnotation *myAnnotationTest=[[DRMapSitioPinAnnotation alloc] initWithCoordinate:theCoordinate1 title:@"Prueba Titulo" subtitle:@"prueba Subtitulo"];
 
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;

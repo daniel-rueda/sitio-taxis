@@ -296,9 +296,12 @@
 				AF6C8A0415FB0E1200750273 /* Ubicacion.m in Sources */,
 				AF6C8A0715FB0E1200750273 /* Comentario.m in Sources */,
 				AF6C8A0A15FB0E4F00750273 /* DRSitioCell.m in Sources */,
+<<<<<<< HEAD
 				D3B0AE6D15FB16BC005FC9B1 /* DRTableViewMapControllerViewController.m in Sources */,
 				D3A4E9A815FB218200CC9633 /* DRMapSitioPinAnnotation.m in Sources */,
+=======
 				AF6C8A0F15FB126500750273 /* DRDataModel.m in Sources */,
+>>>>>>> master
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
