@@ -31,7 +31,7 @@
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7TI-bi-0HW" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController id="oda-48-gmx" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Mapa" image="first" id="7"/>
+                    <tabBarItem key="tabBarItem" title="Mapa" image="mapa_tabIcon" id="7"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="HcQ-ZN-amF">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -209,7 +209,7 @@
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2n8-IH-pEg" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController id="u3k-xd-9iA" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Lista" image="second" id="6"/>
+                    <tabBarItem key="tabBarItem" title="Lista" image="lista_tabIcon" id="6"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" barStyle="blackOpaque" id="Yhz-Qe-STL">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -368,8 +368,8 @@
     </scenes>
     <resources>
         <image name="2estrellas.png" width="80" height="50"/>
-        <image name="first" width="16" height="16"/>
-        <image name="second" width="16" height="16"/>
+        <image name="lista_tabIcon" width="16" height="16"/>
+        <image name="mapa_tabIcon" width="16" height="16"/>
         <image name="tel_icon" width="16" height="16"/>
     </resources>
     <classes>
