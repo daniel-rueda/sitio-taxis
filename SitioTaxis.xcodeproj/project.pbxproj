@@ -20,6 +20,8 @@
 		AFC2E17915FAD923009A9E23 /* DRSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFC2E17815FAD923009A9E23 /* DRSecondViewController.m */; };
 		AFC2E17B15FAD923009A9E23 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = AFC2E17A15FAD923009A9E23 /* second.png */; };
 		AFC2E17D15FAD923009A9E23 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AFC2E17C15FAD923009A9E23 /* second@2x.png */; };
+		AFC2E18415FAF782009A9E23 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFC2E18315FAF782009A9E23 /* MapKit.framework */; };
+		AFC2E18615FAF792009A9E23 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFC2E18515FAF792009A9E23 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,8 @@
 		AFC2E17815FAD923009A9E23 /* DRSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DRSecondViewController.m; sourceTree = "<group>"; };
 		AFC2E17A15FAD923009A9E23 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
 		AFC2E17C15FAD923009A9E23 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+		AFC2E18315FAF782009A9E23 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		AFC2E18515FAF792009A9E23 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +53,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFC2E18615FAF792009A9E23 /* CoreLocation.framework in Frameworks */,
+				AFC2E18415FAF782009A9E23 /* MapKit.framework in Frameworks */,
 				AFC2E15C15FAD923009A9E23 /* UIKit.framework in Frameworks */,
 				AFC2E15E15FAD923009A9E23 /* Foundation.framework in Frameworks */,
 				AFC2E16015FAD923009A9E23 /* CoreGraphics.framework in Frameworks */,
@@ -78,6 +84,8 @@
 		AFC2E15A15FAD923009A9E23 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AFC2E18515FAF792009A9E23 /* CoreLocation.framework */,
+				AFC2E18315FAF782009A9E23 /* MapKit.framework */,
 				AFC2E15B15FAD923009A9E23 /* UIKit.framework */,
 				AFC2E15D15FAD923009A9E23 /* Foundation.framework */,
 				AFC2E15F15FAD923009A9E23 /* CoreGraphics.framework */,
