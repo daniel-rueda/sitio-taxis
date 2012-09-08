@@ -17,6 +17,7 @@
 - (NSFetchedResultsController *)sitios;
 - (NSFetchedResultsController *)sitiosConCodigoPostal:(NSString *)codigoPostal;
 - (NSFetchedResultsController *)sitiosConColonia:(NSString *)colonia;
+- (NSFetchedResultsController *)sitiosConDelegacion:(NSString *)delegacion;
 - (NSFetchedResultsController *)sitiosCercanosUbicacion:(CLLocation *)location
                                         distanciaMaxima:(NSNumber *)distancia;
 

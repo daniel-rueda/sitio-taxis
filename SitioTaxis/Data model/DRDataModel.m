@@ -52,6 +52,11 @@ static DRDataModel *_sharedInstance = nil;
     return nil;
 }
 
+- (NSFetchedResultsController *)sitiosConDelegacion:(NSString *)delegacion
+{
+    return nil;
+}
+
 - (NSFetchedResultsController *)sitiosCercanosUbicacion:(CLLocation *)location 
                                         distanciaMaxima:(NSNumber *)distancia
 {
