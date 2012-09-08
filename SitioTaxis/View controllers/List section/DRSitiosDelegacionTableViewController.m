@@ -22,7 +22,10 @@
     [super viewDidLoad];
     self.title = @"Sitios";
     
-    [self.tableView setContentOffset:CGPointMake(0, self.searchDisplayController.searchBar.frame.size.height)];
+    CGRect newBounds = self.tableView.bounds;
+    newBounds.origin.y = newBounds.origin.y + self.searchDisplayController.searchBar.bounds.size.height;
+    self.tableView.bounds = newBounds;
+    
     _sitios = [NSArray arrayWithObjects:@"Sitio 01", @"Sitio 02", @"Sitio 03", @"Sitio 04", @"Sitio 05", @"Sitio 06", @"Sitio 07", @"Sitio 08", @"Sitio 09", @"Sitio 10", nil];
 }
 
@@ -55,13 +58,23 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"sitioCell";
-    DRSitioCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    if (tableView == self.tableView) {
+        static NSString *CellIdentifier = @"sitioCell";
+        DRSitioCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+        
+        cell.nombreSitio.text = [_sitios objectAtIndex:indexPath.row];
+        NSString *filename = [NSString stringWithFormat:@"%destrellas", indexPath.row % 6];
+        cell.rating.image = [UIImage imageNamed:filename];
+        
+        return cell;
+    }
     
-    cell.nombreSitio.text = [_sitios objectAtIndex:indexPath.row];
-    NSString *filename = [NSString stringWithFormat:@"%destrellas", indexPath.row % 6];
-    cell.rating.image = [UIImage imageNamed:filename];
-    
+    static NSString *cellID = @"genericCell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID];
+    if (!cell) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellID];
+    }
+    cell.textLabel.text = [_sitios objectAtIndex:indexPath.row];
     return cell;
 }
 
@@ -74,5 +87,13 @@
 
 #pragma mark - UISearchDisplayDelegate
 
+#pragma mark - UISearchDisplayController Delegate Methods
+-(BOOL)searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchString:(NSString *)searchString {
+    return YES;
+}
+
+-(BOOL)searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchScope:(NSInteger)searchOption {
+    return YES;
+}
 
 @end
