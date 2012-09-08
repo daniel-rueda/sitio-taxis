@@ -19,6 +19,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.title = @"Delegaciones";
     _delegaciones = [NSArray arrayWithObjects:@"Delegacion 01", @"Delegacion 02", @"Delegacion 03", @"Delegacion 04", @"Delegacion 05", @"Delegacion 06", @"Delegacion 07", @"Delegacion 08", @"Delegacion 09", @"Delegacion 10", nil];
 }
 

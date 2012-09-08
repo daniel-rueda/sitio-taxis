@@ -20,6 +20,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.title = @"Sitios";
+    
+    [self.tableView setContentOffset:CGPointMake(0, self.searchDisplayController.searchBar.frame.size.height)];
     _sitios = [NSArray arrayWithObjects:@"Sitio 01", @"Sitio 02", @"Sitio 03", @"Sitio 04", @"Sitio 05", @"Sitio 06", @"Sitio 07", @"Sitio 08", @"Sitio 09", @"Sitio 10", nil];
 }
 
