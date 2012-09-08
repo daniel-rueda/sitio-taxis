@@ -27,6 +27,9 @@
     self.tableView.bounds = newBounds;
     
     _sitios = [NSArray arrayWithObjects:@"Sitio 01", @"Sitio 02", @"Sitio 03", @"Sitio 04", @"Sitio 05", @"Sitio 06", @"Sitio 07", @"Sitio 08", @"Sitio 09", @"Sitio 10", nil];
+    
+    self.searchDisplayController.searchResultsTableView.backgroundColor = [UIColor colorWithRed:209.0f/255 green:175.0/255 blue:78.0/255 alpha:1];
+    self.searchDisplayController.searchResultsTableView.separatorColor = [UIColor colorWithRed:134.0f/255 green:21.0/255 blue:37.0/255 alpha:1];
 }
 
 - (void)viewDidUnload
@@ -55,6 +58,8 @@
 {
     if (tableView == self.tableView) {
         cell.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"fondo-tabla"]];
+    }else {
+        cell.backgroundColor = [UIColor colorWithRed:209.0f/255 green:175.0/255 blue:78.0/255 alpha:1];
     }
 }
 
