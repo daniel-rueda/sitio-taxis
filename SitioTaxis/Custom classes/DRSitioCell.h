@@ -11,7 +11,7 @@
 
 @interface DRSitioCell : UITableViewCell
 
-@property (nonatomic, retain) Sitio *sitio;
+@property (nonatomic, strong) Sitio *sitio;
 
 @property (nonatomic, weak) IBOutlet UILabel *nombreSitio;
 @property (nonatomic, weak) IBOutlet UILabel *distanciaSitio;

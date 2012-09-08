@@ -37,6 +37,7 @@
 		AFC2E17D15FAD923009A9E23 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AFC2E17C15FAD923009A9E23 /* second@2x.png */; };
 		AFC2E18415FAF782009A9E23 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFC2E18315FAF782009A9E23 /* MapKit.framework */; };
 		AFC2E18615FAF792009A9E23 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFC2E18515FAF792009A9E23 /* CoreLocation.framework */; };
+		AFF96A4315FB911C00B308A4 /* DRDelegacionesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF96A4215FB911C00B308A4 /* DRDelegacionesTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -127,6 +128,8 @@
 		AFC2E17C15FAD923009A9E23 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
 		AFC2E18315FAF782009A9E23 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		AFC2E18515FAF792009A9E23 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		AFF96A4115FB911C00B308A4 /* DRDelegacionesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRDelegacionesTableViewController.h; sourceTree = "<group>"; };
+		AFF96A4215FB911C00B308A4 /* DRDelegacionesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRDelegacionesTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +178,8 @@
 		AF6C89F415FB096A00750273 /* List section */ = {
 			isa = PBXGroup;
 			children = (
+				AFF96A4115FB911C00B308A4 /* DRDelegacionesTableViewController.h */,
+				AFF96A4215FB911C00B308A4 /* DRDelegacionesTableViewController.m */,
 			);
 			path = "List section";
 			sourceTree = "<group>";
@@ -417,6 +422,7 @@
 				AF6C8A0715FB0E1200750273 /* Comentario.m in Sources */,
 				AF6C8A0A15FB0E4F00750273 /* DRSitioCell.m in Sources */,
 				AF6C8A0F15FB126500750273 /* DRDataModel.m in Sources */,
+				AFF96A4315FB911C00B308A4 /* DRDelegacionesTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
