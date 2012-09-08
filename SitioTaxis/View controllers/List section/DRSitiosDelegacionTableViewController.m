@@ -59,6 +59,8 @@
     DRSitioCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
     cell.nombreSitio.text = [_sitios objectAtIndex:indexPath.row];
+    NSString *filename = [NSString stringWithFormat:@"%destrellas", indexPath.row % 6];
+    cell.rating.image = [UIImage imageNamed:filename];
     
     return cell;
 }

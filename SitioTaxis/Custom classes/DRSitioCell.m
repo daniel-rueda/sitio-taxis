@@ -14,6 +14,7 @@
 @synthesize nombreSitio = _nombreSitio;
 @synthesize distanciaSitio = _distanciaSitio;
 @synthesize telefonoSitio = _telefonoSitio;
+@synthesize rating = _rating;
 
 - (void)updateSitioInfo
 {
