@@ -12,18 +12,18 @@
 
 static DRDataModel *_sharedInstance = nil;
 
-+ (id)alloc
-{
-    NSAssert(_sharedInstance != nil, @"Attemping allocate a second instance of a singleton");
-    return [super alloc];
-}
-
 + (DRDataModel *)sharedModel
 {
     if (!_sharedInstance) {
         _sharedInstance = [[self alloc] init];
     }
     return _sharedInstance;
+}
+
++ (id)alloc
+{
+    NSAssert(_sharedInstance == nil, @"Attemping allocate a second instance of a singleton");
+    return [super alloc];
 }
 
 - (id)init
@@ -35,6 +35,8 @@ static DRDataModel *_sharedInstance = nil;
     return self;
 }
 
+#pragma mark - Fetching objects
+#pragma mark Sitios
 - (NSFetchedResultsController *)sitios
 {
     return nil;
