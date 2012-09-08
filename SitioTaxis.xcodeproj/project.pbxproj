@@ -15,6 +15,13 @@
 		AF6C8A0A15FB0E4F00750273 /* DRSitioCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6C8A0915FB0E4F00750273 /* DRSitioCell.m */; };
 		AF6C8A0C15FB11CB00750273 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF6C8A0B15FB11CB00750273 /* CoreData.framework */; };
 		AF6C8A0F15FB126500750273 /* DRDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6C8A0E15FB126500750273 /* DRDataModel.m */; };
+		AF6C8A2B15FB1E7400750273 /* libRestKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AF6C8A1C15FB1E4200750273 /* libRestKit.a */; };
+		AF6C8A2F15FB1E8300750273 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF6C8A2E15FB1E8300750273 /* Security.framework */; };
+		AF6C8A3115FB1E8800750273 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF6C8A3015FB1E8800750273 /* QuartzCore.framework */; };
+		AF6C8A3315FB1E9100750273 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF6C8A3215FB1E9100750273 /* SystemConfiguration.framework */; };
+		AF6C8A3515FB1E9A00750273 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AF6C8A3415FB1E9A00750273 /* libxml2.dylib */; };
+		AF6C8A4415FB1F1200750273 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF6C8A4315FB1F1200750273 /* MobileCoreServices.framework */; };
+		AF6C8A4615FB1FA100750273 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF6C8A4515FB1FA100750273 /* CFNetwork.framework */; };
 		AFC2E15C15FAD923009A9E23 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFC2E15B15FAD923009A9E23 /* UIKit.framework */; };
 		AFC2E15E15FAD923009A9E23 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFC2E15D15FAD923009A9E23 /* Foundation.framework */; };
 		AFC2E16015FAD923009A9E23 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFC2E15F15FAD923009A9E23 /* CoreGraphics.framework */; };
@@ -32,6 +39,51 @@
 		AFC2E18615FAF792009A9E23 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFC2E18515FAF792009A9E23 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		AF6C8A1B15FB1E4200750273 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF6C8A1015FB1E4200750273 /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160D1614564E810060A5C5;
+			remoteInfo = RestKit;
+		};
+		AF6C8A1D15FB1E4200750273 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF6C8A1015FB1E4200750273 /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160D2614564E820060A5C5;
+			remoteInfo = RestKitTests;
+		};
+		AF6C8A1F15FB1E4200750273 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF6C8A1015FB1E4200750273 /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160E62145651060060A5C5;
+			remoteInfo = RestKitFramework;
+		};
+		AF6C8A2115FB1E4200750273 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF6C8A1015FB1E4200750273 /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160E78145651060060A5C5;
+			remoteInfo = RestKitFrameworkTests;
+		};
+		AF6C8A2315FB1E4200750273 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF6C8A1015FB1E4200750273 /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 259C301615128079003066A2;
+			remoteInfo = RestKitResources;
+		};
+		AF6C8A2C15FB1E7B00750273 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF6C8A1015FB1E4200750273 /* RestKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 25160D1514564E810060A5C5;
+			remoteInfo = RestKit;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		AF6C89FA15FB09E100750273 /* SitioTaxis.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SitioTaxis.xcdatamodel; sourceTree = "<group>"; };
 		AF6C89FC15FB0E1100750273 /* Sitio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sitio.h; sourceTree = "<group>"; };
@@ -47,6 +99,13 @@
 		AF6C8A0B15FB11CB00750273 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		AF6C8A0D15FB126500750273 /* DRDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRDataModel.h; sourceTree = "<group>"; };
 		AF6C8A0E15FB126500750273 /* DRDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRDataModel.m; sourceTree = "<group>"; };
+		AF6C8A1015FB1E4200750273 /* RestKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RestKit.xcodeproj; path = RestKit/RestKit.xcodeproj; sourceTree = SOURCE_ROOT; };
+		AF6C8A2E15FB1E8300750273 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		AF6C8A3015FB1E8800750273 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		AF6C8A3215FB1E9100750273 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		AF6C8A3415FB1E9A00750273 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		AF6C8A4315FB1F1200750273 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		AF6C8A4515FB1FA100750273 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		AFC2E15715FAD923009A9E23 /* SitioTaxis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SitioTaxis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFC2E15B15FAD923009A9E23 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		AFC2E15D15FAD923009A9E23 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -75,6 +134,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF6C8A4615FB1FA100750273 /* CFNetwork.framework in Frameworks */,
+				AF6C8A4415FB1F1200750273 /* MobileCoreServices.framework in Frameworks */,
+				AF6C8A3515FB1E9A00750273 /* libxml2.dylib in Frameworks */,
+				AF6C8A3315FB1E9100750273 /* SystemConfiguration.framework in Frameworks */,
+				AF6C8A3115FB1E8800750273 /* QuartzCore.framework in Frameworks */,
+				AF6C8A2F15FB1E8300750273 /* Security.framework in Frameworks */,
+				AF6C8A2B15FB1E7400750273 /* libRestKit.a in Frameworks */,
 				AF6C8A0C15FB11CB00750273 /* CoreData.framework in Frameworks */,
 				AFC2E18615FAF792009A9E23 /* CoreLocation.framework in Frameworks */,
 				AFC2E18415FAF782009A9E23 /* MapKit.framework in Frameworks */,
@@ -145,6 +211,18 @@
 			path = "Data model";
 			sourceTree = "<group>";
 		};
+		AF6C8A1115FB1E4200750273 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AF6C8A1C15FB1E4200750273 /* libRestKit.a */,
+				AF6C8A1E15FB1E4200750273 /* RestKitTests.octest */,
+				AF6C8A2015FB1E4200750273 /* RestKit.framework */,
+				AF6C8A2215FB1E4200750273 /* RestKitFrameworkTests.octest */,
+				AF6C8A2415FB1E4200750273 /* RestKitResources.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		AFC2E14C15FAD921009A9E23 = {
 			isa = PBXGroup;
 			children = (
@@ -165,6 +243,13 @@
 		AFC2E15A15FAD923009A9E23 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AF6C8A4515FB1FA100750273 /* CFNetwork.framework */,
+				AF6C8A4315FB1F1200750273 /* MobileCoreServices.framework */,
+				AF6C8A3415FB1E9A00750273 /* libxml2.dylib */,
+				AF6C8A3215FB1E9100750273 /* SystemConfiguration.framework */,
+				AF6C8A3015FB1E8800750273 /* QuartzCore.framework */,
+				AF6C8A2E15FB1E8300750273 /* Security.framework */,
+				AF6C8A1015FB1E4200750273 /* RestKit.xcodeproj */,
 				AF6C8A0B15FB11CB00750273 /* CoreData.framework */,
 				AFC2E18515FAF792009A9E23 /* CoreLocation.framework */,
 				AFC2E18315FAF782009A9E23 /* MapKit.framework */,
@@ -222,6 +307,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				AF6C8A2D15FB1E7B00750273 /* PBXTargetDependency */,
 			);
 			name = SitioTaxis;
 			productName = SitioTaxis;
@@ -248,12 +334,56 @@
 			mainGroup = AFC2E14C15FAD921009A9E23;
 			productRefGroup = AFC2E15815FAD923009A9E23 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = AF6C8A1115FB1E4200750273 /* Products */;
+					ProjectRef = AF6C8A1015FB1E4200750273 /* RestKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				AFC2E15615FAD923009A9E23 /* SitioTaxis */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		AF6C8A1C15FB1E4200750273 /* libRestKit.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRestKit.a;
+			remoteRef = AF6C8A1B15FB1E4200750273 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AF6C8A1E15FB1E4200750273 /* RestKitTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RestKitTests.octest;
+			remoteRef = AF6C8A1D15FB1E4200750273 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AF6C8A2015FB1E4200750273 /* RestKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RestKit.framework;
+			remoteRef = AF6C8A1F15FB1E4200750273 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AF6C8A2215FB1E4200750273 /* RestKitFrameworkTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RestKitFrameworkTests.octest;
+			remoteRef = AF6C8A2115FB1E4200750273 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AF6C8A2415FB1E4200750273 /* RestKitResources.bundle */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RestKitResources.bundle;
+			remoteRef = AF6C8A2315FB1E4200750273 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		AFC2E15515FAD923009A9E23 /* Resources */ = {
@@ -291,6 +421,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AF6C8A2D15FB1E7B00750273 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RestKit;
+			targetProxy = AF6C8A2C15FB1E7B00750273 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		AFC2E16415FAD923009A9E23 /* InfoPlist.strings */ = {
@@ -362,7 +500,12 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SitioTaxis/SitioTaxis-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"$(BUILT_PRODUCTS_DIR)/../../Headers\"";
 				INFOPLIST_FILE = "SitioTaxis/SitioTaxis-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -373,7 +516,12 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SitioTaxis/SitioTaxis-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"$(BUILT_PRODUCTS_DIR)/../../Headers\"";
 				INFOPLIST_FILE = "SitioTaxis/SitioTaxis-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
