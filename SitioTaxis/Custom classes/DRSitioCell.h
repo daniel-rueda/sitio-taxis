@@ -11,11 +11,12 @@
 
 @interface DRSitioCell : UITableViewCell
 
-@property (nonatomic, retain) Sitio *sitio;
+@property (nonatomic, strong) Sitio *sitio;
 
 @property (nonatomic, weak) IBOutlet UILabel *nombreSitio;
 @property (nonatomic, weak) IBOutlet UILabel *distanciaSitio;
 @property (nonatomic, weak) IBOutlet UIButton *telefonoSitio;
+@property (nonatomic, weak) IBOutlet UIImageView *rating;
 
 - (IBAction)telefonoSeleccionado:(id)sender;
 

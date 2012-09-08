@@ -30,12 +30,16 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    Ubicacion *pruebaDeUbicacion;
+    //Ubicacion *pruebaDeUbicacion;
     CLLocationCoordinate2D theCoordinate1;
     theCoordinate1.latitude = 19.402064;
     theCoordinate1.longitude = -99.166106;
-    
+    [halfMap setDelegate:self];
     DRMapSitioPinAnnotation *myAnnotationTest=[[DRMapSitioPinAnnotation alloc] initWithCoordinate:theCoordinate1 title:@"Prueba Titulo" subtitle:@"prueba Subtitulo"];
+    
+    [halfMap addAnnotation:myAnnotationTest];
+    
+    [self.halfMap setShowsUserLocation:YES];
 
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -64,19 +68,19 @@
 {
 #warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
 #warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 0;
+    return 1;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Cell";
+    static NSString *CellIdentifier = @"sitioCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
     // Configure the cell...
@@ -138,16 +142,35 @@
 
 #pragma mark - Map view delegate
 -(void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation{
-    MKCoordinateRegion region;
-    MKCoordinateSpan span;
-    span.latitudeDelta = 0.05;
-    span.longitudeDelta = 0.05;
-    CLLocationCoordinate2D location;
-    location.latitude = userLocation.coordinate.latitude;
-    location.longitude = userLocation.coordinate.longitude;
-    region.span = span;
-    region.center = location;
+    
+    CLLocationCoordinate2D location=[userLocation coordinate];
+    MKCoordinateRegion region=MKCoordinateRegionMakeWithDistance(location, 1000, 1000);
+    //region.center = location;
     [self.halfMap setRegion:region animated:YES];
+}
+
+-(MKAnnotationView*)mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation{
+    static NSString *AnnotationViewID = @"annotationViewID";
+	
+    MKAnnotationView *annotationView = (MKAnnotationView *)[halfMap dequeueReusableAnnotationViewWithIdentifier:AnnotationViewID];
+	
+    if (annotationView == nil)
+    {
+        annotationView = [[MKAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:AnnotationViewID];
+    }
+	
+	
+	if ([annotation isKindOfClass:[DRMapSitioPinAnnotation class]]) {
+		annotationView.image = [UIImage imageNamed:@"pin.png"];
+		annotationView.annotation = annotation;
+		annotationView.canShowCallout = YES;
+		UIButton* rightButton = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
+		annotationView.rightCalloutAccessoryView = rightButton;
+		return annotationView;
+	}
+	else{
+	    return nil;
+	}
 }
 
 @end
