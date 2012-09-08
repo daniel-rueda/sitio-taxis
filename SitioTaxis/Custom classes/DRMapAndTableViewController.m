@@ -19,6 +19,7 @@
 @implementation DRMapAndTableViewController
 @synthesize mapa;
 @synthesize tableView;
+@synthesize coordinate;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
