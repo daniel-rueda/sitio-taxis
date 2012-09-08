@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF6C89FB15FB09E100750273 /* SitioTaxis.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AF6C89F915FB09E100750273 /* SitioTaxis.xcdatamodeld */; };
 		AFC2E15C15FAD923009A9E23 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFC2E15B15FAD923009A9E23 /* UIKit.framework */; };
 		AFC2E15E15FAD923009A9E23 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFC2E15D15FAD923009A9E23 /* Foundation.framework */; };
 		AFC2E16015FAD923009A9E23 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFC2E15F15FAD923009A9E23 /* CoreGraphics.framework */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AF6C89FA15FB09E100750273 /* SitioTaxis.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SitioTaxis.xcdatamodel; sourceTree = "<group>"; };
 		AFC2E15715FAD923009A9E23 /* SitioTaxis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SitioTaxis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFC2E15B15FAD923009A9E23 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		AFC2E15D15FAD923009A9E23 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -105,6 +107,7 @@
 		AF6C89F815FB099A00750273 /* Data model */ = {
 			isa = PBXGroup;
 			children = (
+				AF6C89F915FB09E100750273 /* SitioTaxis.xcdatamodeld */,
 			);
 			path = "Data model";
 			sourceTree = "<group>";
@@ -243,6 +246,7 @@
 				AFC2E16C15FAD923009A9E23 /* DRAppDelegate.m in Sources */,
 				AFC2E17215FAD923009A9E23 /* DRFirstViewController.m in Sources */,
 				AFC2E17915FAD923009A9E23 /* DRSecondViewController.m in Sources */,
+				AF6C89FB15FB09E100750273 /* SitioTaxis.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,6 +361,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		AF6C89F915FB09E100750273 /* SitioTaxis.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AF6C89FA15FB09E100750273 /* SitioTaxis.xcdatamodel */,
+			);
+			currentVersion = AF6C89FA15FB09E100750273 /* SitioTaxis.xcdatamodel */;
+			path = SitioTaxis.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = AFC2E14E15FAD921009A9E23 /* Project object */;
 }
