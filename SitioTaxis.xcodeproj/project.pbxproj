@@ -29,6 +29,8 @@
 		AFC2E17D15FAD923009A9E23 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AFC2E17C15FAD923009A9E23 /* second@2x.png */; };
 		AFC2E18415FAF782009A9E23 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFC2E18315FAF782009A9E23 /* MapKit.framework */; };
 		AFC2E18615FAF792009A9E23 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFC2E18515FAF792009A9E23 /* CoreLocation.framework */; };
+		D3A4E9A815FB218200CC9633 /* DRMapSitioPinAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = D3A4E9A715FB218200CC9633 /* DRMapSitioPinAnnotation.m */; };
+		D3B0AE6D15FB16BC005FC9B1 /* DRTableViewMapControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3B0AE6C15FB16BC005FC9B1 /* DRTableViewMapControllerViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +67,10 @@
 		AFC2E17C15FAD923009A9E23 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
 		AFC2E18315FAF782009A9E23 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		AFC2E18515FAF792009A9E23 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		D3A4E9A615FB218200CC9633 /* DRMapSitioPinAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRMapSitioPinAnnotation.h; sourceTree = "<group>"; };
+		D3A4E9A715FB218200CC9633 /* DRMapSitioPinAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRMapSitioPinAnnotation.m; sourceTree = "<group>"; };
+		D3B0AE6B15FB16BC005FC9B1 /* DRTableViewMapControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRTableViewMapControllerViewController.h; sourceTree = "<group>"; };
+		D3B0AE6C15FB16BC005FC9B1 /* DRTableViewMapControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRTableViewMapControllerViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +95,10 @@
 			children = (
 				AF6C8A0815FB0E4F00750273 /* DRSitioCell.h */,
 				AF6C8A0915FB0E4F00750273 /* DRSitioCell.m */,
+				D3B0AE6B15FB16BC005FC9B1 /* DRTableViewMapControllerViewController.h */,
+				D3B0AE6C15FB16BC005FC9B1 /* DRTableViewMapControllerViewController.m */,
+				D3A4E9A615FB218200CC9633 /* DRMapSitioPinAnnotation.h */,
+				D3A4E9A715FB218200CC9633 /* DRMapSitioPinAnnotation.m */,
 			);
 			path = "Custom classes";
 			sourceTree = "<group>";
@@ -281,6 +291,8 @@
 				AF6C8A0415FB0E1200750273 /* Ubicacion.m in Sources */,
 				AF6C8A0715FB0E1200750273 /* Comentario.m in Sources */,
 				AF6C8A0A15FB0E4F00750273 /* DRSitioCell.m in Sources */,
+				D3B0AE6D15FB16BC005FC9B1 /* DRTableViewMapControllerViewController.m in Sources */,
+				D3A4E9A815FB218200CC9633 /* DRMapSitioPinAnnotation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
