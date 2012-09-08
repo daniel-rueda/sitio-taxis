@@ -9,14 +9,16 @@
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 
+@class Ubicacion, Telefono;
+
 
 @interface Sitio : NSManagedObject
 
 @property (nonatomic, retain) NSString * nombre;
 @property (nonatomic, retain) NSNumber * calificacion;
 @property (nonatomic, retain) NSSet *comentarios;
-@property (nonatomic, retain) NSManagedObject *ubicacion;
-@property (nonatomic, retain) NSManagedObject *telefono;
+@property (nonatomic, retain) Ubicacion *ubicacion;
+@property (nonatomic, retain) Telefono *telefono;
 @end
 
 @interface Sitio (CoreDataGeneratedAccessors)

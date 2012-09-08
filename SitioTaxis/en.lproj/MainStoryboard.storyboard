@@ -58,7 +58,7 @@
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         </mapView>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="sitioCell" rowHeight="70" id="FW6-sp-atN">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="sitioCell" rowHeight="70" id="FW6-sp-atN" customClass="DRSitioCell">
                                 <rect key="frame" x="0.0" y="172" width="320" height="70"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -83,6 +83,9 @@
                                             <state key="highlighted">
                                                 <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             </state>
+                                            <connections>
+                                                <action selector="telefonoSeleccionado:" destination="FW6-sp-atN" eventType="touchUpInside" id="jXt-TR-aoE"/>
+                                            </connections>
                                         </button>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Distancia" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="rG2-gn-ELa">
                                             <rect key="frame" x="180" y="35" width="100" height="25"/>
@@ -95,6 +98,9 @@
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                                 <connections>
+                                    <outlet property="distanciaSitio" destination="rG2-gn-ELa" id="n8u-Rp-jd6"/>
+                                    <outlet property="nombreSitio" destination="cew-M6-omb" id="e4H-87-Q61"/>
+                                    <outlet property="telefonoSitio" destination="ovB-Xc-WkA" id="xAs-ak-Zxg"/>
                                     <segue destination="LRx-tB-4rq" kind="push" id="xSf-sv-380"/>
                                 </connections>
                             </tableViewCell>
@@ -259,7 +265,7 @@
                             </scopeButtonTitles>
                         </searchBar>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="sitioCell" rowHeight="70" id="gX1-da-fop">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="sitioCell" rowHeight="70" id="gX1-da-fop" customClass="DRSitioCell">
                                 <rect key="frame" x="0.0" y="110" width="320" height="70"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -284,6 +290,9 @@
                                             <state key="highlighted">
                                                 <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             </state>
+                                            <connections>
+                                                <action selector="telefonoSeleccionado:" destination="gX1-da-fop" eventType="touchUpInside" id="J2m-hG-jeL"/>
+                                            </connections>
                                         </button>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Distancia" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="VZy-BN-Tf6">
                                             <rect key="frame" x="180" y="35" width="100" height="25"/>
@@ -296,6 +305,9 @@
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                                 <connections>
+                                    <outlet property="distanciaSitio" destination="VZy-BN-Tf6" id="DRM-H5-Xyy"/>
+                                    <outlet property="nombreSitio" destination="HPQ-p6-Jzh" id="a4B-Kk-fyc"/>
+                                    <outlet property="telefonoSitio" destination="7LF-8O-3Bl" id="ymy-1P-QhK"/>
                                     <segue destination="LRx-tB-4rq" kind="push" id="cUK-pD-5iu"/>
                                 </connections>
                             </tableViewCell>
@@ -315,6 +327,17 @@
         <image name="first" width="16" height="16"/>
         <image name="second" width="16" height="16"/>
     </resources>
+    <classes>
+        <class className="DRSitioCell" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DRSitioCell.h"/>
+            <relationships>
+                <relationship kind="action" name="telefonoSeleccionado:"/>
+                <relationship kind="outlet" name="distanciaSitio" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="nombreSitio" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="telefonoSitio" candidateClass="UIButton"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
