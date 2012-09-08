@@ -8,10 +8,12 @@
 
 #import "DRTableViewMapControllerViewController.h"
 #import "DRMapSitioPinAnnotation.h"
-#import "Ubicacion.h"
+#import "DRSitioCell.h"
 
 @interface DRTableViewMapControllerViewController ()
-
+{
+    NSArray *_sitios;
+}
 @end
 
 @implementation DRTableViewMapControllerViewController
@@ -30,6 +32,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.title = @"Sitios";
+    
+    [self.tableView setContentOffset:CGPointMake(0, self.halfMap.frame.size.height)];
+    _sitios = [NSArray arrayWithObjects:@"Sitio 01", @"Sitio 02", @"Sitio 03", @"Sitio 04", @"Sitio 05", @"Sitio 06", @"Sitio 07", @"Sitio 08", @"Sitio 09", @"Sitio 10", nil];
+    
     //Ubicacion *pruebaDeUbicacion;
     CLLocationCoordinate2D theCoordinate1;
     theCoordinate1.latitude = 19.402064;
@@ -75,17 +82,24 @@
 {
 #warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 1;
+    return [_sitios count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"sitioCell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    DRSitioCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
-    // Configure the cell...
+    cell.nombreSitio.text = [_sitios objectAtIndex:indexPath.row];
+    NSString *filename = [NSString stringWithFormat:@"%destrellas", indexPath.row % 6];
+    cell.rating.image = [UIImage imageNamed:filename];
     
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    cell.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"fondo-tabla"]];
 }
 
 /*
@@ -127,18 +141,16 @@
 }
 */
 
+
 #pragma mark - Table view delegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    // Navigation logic may go here. Create and push another view controller.
-    /*
-     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-     // ...
-     // Pass the selected object to the new view controller.
-     [self.navigationController pushViewController:detailViewController animated:YES];
-     */
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
+
+
+
 
 #pragma mark - Map view delegate
 -(void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation{

@@ -62,11 +62,13 @@
 		AFC2E18615FAF792009A9E23 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFC2E18515FAF792009A9E23 /* CoreLocation.framework */; };
 		AFF96A4315FB911C00B308A4 /* DRDelegacionesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF96A4215FB911C00B308A4 /* DRDelegacionesTableViewController.m */; };
 		AFF96A4615FB931300B308A4 /* DRSitiosDelegacionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF96A4515FB931300B308A4 /* DRSitiosDelegacionTableViewController.m */; };
+		D39BF63A15FBEFA500FFDD2D /* DRMapAndTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D39BF63915FBEFA500FFDD2D /* DRMapAndTableViewController.m */; };
 		D3A4E9A815FB218200CC9633 /* DRMapSitioPinAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = D3A4E9A715FB218200CC9633 /* DRMapSitioPinAnnotation.m */; };
 		D3B0AE6D15FB16BC005FC9B1 /* DRTableViewMapControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3B0AE6C15FB16BC005FC9B1 /* DRTableViewMapControllerViewController.m */; };
 		D3DF034D15FB9DB3005422EE /* logo_57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = D3DF034A15FB9DB3005422EE /* logo_57x57.png */; };
 		D3DF034E15FB9DB3005422EE /* logo_114x114.png in Resources */ = {isa = PBXBuildFile; fileRef = D3DF034B15FB9DB3005422EE /* logo_114x114.png */; };
 		D3DF034F15FB9DB3005422EE /* pin.png in Resources */ = {isa = PBXBuildFile; fileRef = D3DF034C15FB9DB3005422EE /* pin.png */; };
+		D3DF035615FBA7F8005422EE /* address.plist in Resources */ = {isa = PBXBuildFile; fileRef = D3DF035515FBA7F8005422EE /* address.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -184,6 +186,8 @@
 		AFF96A4215FB911C00B308A4 /* DRDelegacionesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRDelegacionesTableViewController.m; sourceTree = "<group>"; };
 		AFF96A4415FB931300B308A4 /* DRSitiosDelegacionTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRSitiosDelegacionTableViewController.h; sourceTree = "<group>"; };
 		AFF96A4515FB931300B308A4 /* DRSitiosDelegacionTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRSitiosDelegacionTableViewController.m; sourceTree = "<group>"; };
+		D39BF63815FBEFA500FFDD2D /* DRMapAndTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRMapAndTableViewController.h; sourceTree = "<group>"; };
+		D39BF63915FBEFA500FFDD2D /* DRMapAndTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRMapAndTableViewController.m; sourceTree = "<group>"; };
 		D3A4E9A615FB218200CC9633 /* DRMapSitioPinAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRMapSitioPinAnnotation.h; sourceTree = "<group>"; };
 		D3A4E9A715FB218200CC9633 /* DRMapSitioPinAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRMapSitioPinAnnotation.m; sourceTree = "<group>"; };
 		D3B0AE6B15FB16BC005FC9B1 /* DRTableViewMapControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRTableViewMapControllerViewController.h; sourceTree = "<group>"; };
@@ -191,6 +195,7 @@
 		D3DF034A15FB9DB3005422EE /* logo_57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_57x57.png; sourceTree = "<group>"; };
 		D3DF034B15FB9DB3005422EE /* logo_114x114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_114x114.png; sourceTree = "<group>"; };
 		D3DF034C15FB9DB3005422EE /* pin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pin.png; sourceTree = "<group>"; };
+		D3DF035515FBA7F8005422EE /* address.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = address.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -226,6 +231,8 @@
 				D3B0AE6C15FB16BC005FC9B1 /* DRTableViewMapControllerViewController.m */,
 				D3A4E9A615FB218200CC9633 /* DRMapSitioPinAnnotation.h */,
 				D3A4E9A715FB218200CC9633 /* DRMapSitioPinAnnotation.m */,
+				D39BF63815FBEFA500FFDD2D /* DRMapAndTableViewController.h */,
+				D39BF63915FBEFA500FFDD2D /* DRMapAndTableViewController.m */,
 			);
 			path = "Custom classes";
 			sourceTree = "<group>";
@@ -339,6 +346,7 @@
 		AFC2E16115FAD923009A9E23 /* SitioTaxis */ = {
 			isa = PBXGroup;
 			children = (
+				D3DF035415FBA7D9005422EE /* Plists */,
 				D3DF034815FB9D93005422EE /* Resources */,
 				AF6C89F815FB099A00750273 /* Data model */,
 				AF6C89F215FB096A00750273 /* Custom classes */,
@@ -397,6 +405,14 @@
 				D3DF034C15FB9DB3005422EE /* pin.png */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		D3DF035415FBA7D9005422EE /* Plists */ = {
+			isa = PBXGroup;
+			children = (
+				D3DF035515FBA7F8005422EE /* address.plist */,
+			);
+			name = Plists;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -507,6 +523,7 @@
 				D3DF034D15FB9DB3005422EE /* logo_57x57.png in Resources */,
 				D3DF034E15FB9DB3005422EE /* logo_114x114.png in Resources */,
 				D3DF034F15FB9DB3005422EE /* pin.png in Resources */,
+				D3DF035615FBA7F8005422EE /* address.plist in Resources */,
 				AF6E56A615FBAAA600711C59 /* fondo-tabla.png in Resources */,
 				AF6E56AF15FBB10900711C59 /* 0estrellas.png in Resources */,
 				AF6E56B015FBB10900711C59 /* 1estrellas.png in Resources */,
@@ -553,6 +570,7 @@
 				AF6C8A0F15FB126500750273 /* DRDataModel.m in Sources */,
 				AFF96A4315FB911C00B308A4 /* DRDelegacionesTableViewController.m in Sources */,
 				AFF96A4615FB931300B308A4 /* DRSitiosDelegacionTableViewController.m in Sources */,
+				D39BF63A15FBEFA500FFDD2D /* DRMapAndTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
