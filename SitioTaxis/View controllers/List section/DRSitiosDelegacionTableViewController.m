@@ -65,4 +65,7 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
+#pragma mark - UISearchDisplayDelegate
+
+
 @end
