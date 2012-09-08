@@ -11,6 +11,6 @@
 
 @interface DRTableViewMapControllerViewController : UITableViewController <MKMapViewDelegate,MKAnnotation>
 
-@property (weak, nonatomic) IBOutlet MKMapView *halfMap;
+@property (strong, nonatomic) IBOutlet MKMapView *halfMap;
 
 @end
