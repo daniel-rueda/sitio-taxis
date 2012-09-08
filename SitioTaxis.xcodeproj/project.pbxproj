@@ -64,6 +64,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AF6C89F215FB096A00750273 /* Custom classes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Custom classes";
+			sourceTree = "<group>";
+		};
+		AF6C89F315FB096A00750273 /* View controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AF6C89F415FB096A00750273 /* List section */,
+				AF6C89F515FB096A00750273 /* Map section */,
+				AF6C89F615FB096A00750273 /* Shared */,
+			);
+			path = "View controllers";
+			sourceTree = "<group>";
+		};
+		AF6C89F415FB096A00750273 /* List section */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "List section";
+			sourceTree = "<group>";
+		};
+		AF6C89F515FB096A00750273 /* Map section */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Map section";
+			sourceTree = "<group>";
+		};
+		AF6C89F615FB096A00750273 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		AF6C89F815FB099A00750273 /* Data model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Data model";
+			sourceTree = "<group>";
+		};
 		AFC2E14C15FAD921009A9E23 = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +141,9 @@
 		AFC2E16115FAD923009A9E23 /* SitioTaxis */ = {
 			isa = PBXGroup;
 			children = (
+				AF6C89F815FB099A00750273 /* Data model */,
+				AF6C89F215FB096A00750273 /* Custom classes */,
+				AF6C89F315FB096A00750273 /* View controllers */,
 				AFC2E16A15FAD923009A9E23 /* DRAppDelegate.h */,
 				AFC2E16B15FAD923009A9E23 /* DRAppDelegate.m */,
 				AFC2E16D15FAD923009A9E23 /* MainStoryboard.storyboard */,
@@ -306,6 +354,7 @@
 				AFC2E18215FAD923009A9E23 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
