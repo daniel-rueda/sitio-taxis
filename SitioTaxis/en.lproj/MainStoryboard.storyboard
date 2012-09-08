@@ -204,11 +204,11 @@
             </objects>
             <point key="canvasLocation" x="653" y="498"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Delegaciones Table View Controller-->
         <scene sceneID="9hG-m2-yNa">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Xa-x2-yvU" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tableViewController id="zC1-EB-VbT" sceneMemberID="viewController">
+                <tableViewController id="zC1-EB-VbT" customClass="DRDelegacionesTableViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="0Cn-c2-KP5">
                         <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -246,12 +246,12 @@
             </objects>
             <point key="canvasLocation" x="1166" y="498"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Sitios Delegacion Table View Controller-->
         <scene sceneID="Dwe-iZ-KtF">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kyH-MD-R3j" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tableViewController id="B7X-72-lV1" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="clb-g9-9nr">
+                <tableViewController id="B7X-72-lV1" customClass="DRSitiosDelegacionTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="70" sectionHeaderHeight="22" sectionFooterHeight="22" id="clb-g9-9nr">
                         <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -328,6 +328,9 @@
         <image name="second" width="16" height="16"/>
     </resources>
     <classes>
+        <class className="DRDelegacionesTableViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DRDelegacionesTableViewController.h"/>
+        </class>
         <class className="DRSitioCell" superclassName="UITableViewCell">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/DRSitioCell.h"/>
             <relationships>
@@ -336,6 +339,9 @@
                 <relationship kind="outlet" name="nombreSitio" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="telefonoSitio" candidateClass="UIButton"/>
             </relationships>
+        </class>
+        <class className="DRSitiosDelegacionTableViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DRSitiosDelegacionTableViewController.h"/>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

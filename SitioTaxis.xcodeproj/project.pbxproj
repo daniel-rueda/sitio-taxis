@@ -38,6 +38,7 @@
 		AFC2E18415FAF782009A9E23 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFC2E18315FAF782009A9E23 /* MapKit.framework */; };
 		AFC2E18615FAF792009A9E23 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFC2E18515FAF792009A9E23 /* CoreLocation.framework */; };
 		AFF96A4315FB911C00B308A4 /* DRDelegacionesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF96A4215FB911C00B308A4 /* DRDelegacionesTableViewController.m */; };
+		AFF96A4615FB931300B308A4 /* DRSitiosDelegacionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF96A4515FB931300B308A4 /* DRSitiosDelegacionTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -130,6 +131,8 @@
 		AFC2E18515FAF792009A9E23 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		AFF96A4115FB911C00B308A4 /* DRDelegacionesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRDelegacionesTableViewController.h; sourceTree = "<group>"; };
 		AFF96A4215FB911C00B308A4 /* DRDelegacionesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRDelegacionesTableViewController.m; sourceTree = "<group>"; };
+		AFF96A4415FB931300B308A4 /* DRSitiosDelegacionTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRSitiosDelegacionTableViewController.h; sourceTree = "<group>"; };
+		AFF96A4515FB931300B308A4 /* DRSitiosDelegacionTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRSitiosDelegacionTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +183,8 @@
 			children = (
 				AFF96A4115FB911C00B308A4 /* DRDelegacionesTableViewController.h */,
 				AFF96A4215FB911C00B308A4 /* DRDelegacionesTableViewController.m */,
+				AFF96A4415FB931300B308A4 /* DRSitiosDelegacionTableViewController.h */,
+				AFF96A4515FB931300B308A4 /* DRSitiosDelegacionTableViewController.m */,
 			);
 			path = "List section";
 			sourceTree = "<group>";
@@ -423,6 +428,7 @@
 				AF6C8A0A15FB0E4F00750273 /* DRSitioCell.m in Sources */,
 				AF6C8A0F15FB126500750273 /* DRDataModel.m in Sources */,
 				AFF96A4315FB911C00B308A4 /* DRDelegacionesTableViewController.m in Sources */,
+				AFF96A4615FB931300B308A4 /* DRSitiosDelegacionTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

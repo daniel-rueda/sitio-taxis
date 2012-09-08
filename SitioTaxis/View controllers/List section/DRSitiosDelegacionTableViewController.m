@@ -1,25 +1,26 @@
 //
-//  DRDelegacionesTableViewController.m
+//  DRSitiosDelegacionTableViewController.m
 //  SitioTaxis
 //
 //  Created by Daniel Rueda Jimenez on 9/8/12.
 //  Copyright (c) 2012 Planet Media. All rights reserved.
 //
 
-#import "DRDelegacionesTableViewController.h"
+#import "DRSitiosDelegacionTableViewController.h"
+#import "DRSitioCell.h"
 
-@interface DRDelegacionesTableViewController ()
+@interface DRSitiosDelegacionTableViewController ()
 {
-    NSArray *_delegaciones;
+    NSArray *_sitios;
 }
 @end
 
-@implementation DRDelegacionesTableViewController
+@implementation DRSitiosDelegacionTableViewController
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    _delegaciones = [NSArray arrayWithObjects:@"Delegacion 01", @"Delegacion 02", @"Delegacion 03", @"Delegacion 04", @"Delegacion 05", @"Delegacion 06", @"Delegacion 07", @"Delegacion 08", @"Delegacion 09", @"Delegacion 10", nil];
+    _sitios = [NSArray arrayWithObjects:@"Sitio 01", @"Sitio 02", @"Sitio 03", @"Sitio 04", @"Sitio 05", @"Sitio 06", @"Sitio 07", @"Sitio 08", @"Sitio 09", @"Sitio 10", nil];
 }
 
 - (void)viewDidUnload
@@ -33,6 +34,7 @@
 }
 
 #pragma mark - Table view data source
+
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     return 1;
@@ -40,15 +42,15 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return [_delegaciones count];
+    return [_sitios count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"delegacionCell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    static NSString *CellIdentifier = @"sitioCell";
+    DRSitioCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
-    cell.textLabel.text = [_delegaciones objectAtIndex:indexPath.row];
+    cell.nombreSitio.text = [_sitios objectAtIndex:indexPath.row];
     
     return cell;
 }
