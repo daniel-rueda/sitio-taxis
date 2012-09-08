@@ -1,0 +1,305 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AFC2E15C15FAD923009A9E23 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFC2E15B15FAD923009A9E23 /* UIKit.framework */; };
+		AFC2E15E15FAD923009A9E23 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFC2E15D15FAD923009A9E23 /* Foundation.framework */; };
+		AFC2E16015FAD923009A9E23 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFC2E15F15FAD923009A9E23 /* CoreGraphics.framework */; };
+		AFC2E16615FAD923009A9E23 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AFC2E16415FAD923009A9E23 /* InfoPlist.strings */; };
+		AFC2E16815FAD923009A9E23 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AFC2E16715FAD923009A9E23 /* main.m */; };
+		AFC2E16C15FAD923009A9E23 /* DRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AFC2E16B15FAD923009A9E23 /* DRAppDelegate.m */; };
+		AFC2E16F15FAD923009A9E23 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFC2E16D15FAD923009A9E23 /* MainStoryboard.storyboard */; };
+		AFC2E17215FAD923009A9E23 /* DRFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFC2E17115FAD923009A9E23 /* DRFirstViewController.m */; };
+		AFC2E17415FAD923009A9E23 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = AFC2E17315FAD923009A9E23 /* first.png */; };
+		AFC2E17615FAD923009A9E23 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AFC2E17515FAD923009A9E23 /* first@2x.png */; };
+		AFC2E17915FAD923009A9E23 /* DRSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFC2E17815FAD923009A9E23 /* DRSecondViewController.m */; };
+		AFC2E17B15FAD923009A9E23 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = AFC2E17A15FAD923009A9E23 /* second.png */; };
+		AFC2E17D15FAD923009A9E23 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AFC2E17C15FAD923009A9E23 /* second@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AFC2E15715FAD923009A9E23 /* SitioTaxis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SitioTaxis.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFC2E15B15FAD923009A9E23 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		AFC2E15D15FAD923009A9E23 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AFC2E15F15FAD923009A9E23 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		AFC2E16315FAD923009A9E23 /* SitioTaxis-Info.plist */ = {isa = PBXFileReference; path = "SitioTaxis-Info.plist"; sourceTree = "<group>"; };
+		AFC2E16515FAD923009A9E23 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AFC2E16715FAD923009A9E23 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AFC2E16915FAD923009A9E23 /* SitioTaxis-Prefix.pch */ = {isa = PBXFileReference; path = "SitioTaxis-Prefix.pch"; sourceTree = "<group>"; };
+		AFC2E16A15FAD923009A9E23 /* DRAppDelegate.h */ = {isa = PBXFileReference; path = DRAppDelegate.h; sourceTree = "<group>"; };
+		AFC2E16B15FAD923009A9E23 /* DRAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DRAppDelegate.m; sourceTree = "<group>"; };
+		AFC2E16E15FAD923009A9E23 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		AFC2E17015FAD923009A9E23 /* DRFirstViewController.h */ = {isa = PBXFileReference; path = DRFirstViewController.h; sourceTree = "<group>"; };
+		AFC2E17115FAD923009A9E23 /* DRFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DRFirstViewController.m; sourceTree = "<group>"; };
+		AFC2E17315FAD923009A9E23 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
+		AFC2E17515FAD923009A9E23 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
+		AFC2E17715FAD923009A9E23 /* DRSecondViewController.h */ = {isa = PBXFileReference; path = DRSecondViewController.h; sourceTree = "<group>"; };
+		AFC2E17815FAD923009A9E23 /* DRSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DRSecondViewController.m; sourceTree = "<group>"; };
+		AFC2E17A15FAD923009A9E23 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
+		AFC2E17C15FAD923009A9E23 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AFC2E15415FAD923009A9E23 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFC2E15C15FAD923009A9E23 /* UIKit.framework in Frameworks */,
+				AFC2E15E15FAD923009A9E23 /* Foundation.framework in Frameworks */,
+				AFC2E16015FAD923009A9E23 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AFC2E14C15FAD921009A9E23 = {
+			isa = PBXGroup;
+			children = (
+				AFC2E16115FAD923009A9E23 /* SitioTaxis */,
+				AFC2E15A15FAD923009A9E23 /* Frameworks */,
+				AFC2E15815FAD923009A9E23 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AFC2E15815FAD923009A9E23 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AFC2E15715FAD923009A9E23 /* SitioTaxis.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AFC2E15A15FAD923009A9E23 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AFC2E15B15FAD923009A9E23 /* UIKit.framework */,
+				AFC2E15D15FAD923009A9E23 /* Foundation.framework */,
+				AFC2E15F15FAD923009A9E23 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AFC2E16115FAD923009A9E23 /* SitioTaxis */ = {
+			isa = PBXGroup;
+			children = (
+				AFC2E16A15FAD923009A9E23 /* DRAppDelegate.h */,
+				AFC2E16B15FAD923009A9E23 /* DRAppDelegate.m */,
+				AFC2E16D15FAD923009A9E23 /* MainStoryboard.storyboard */,
+				AFC2E17015FAD923009A9E23 /* DRFirstViewController.h */,
+				AFC2E17115FAD923009A9E23 /* DRFirstViewController.m */,
+				AFC2E17315FAD923009A9E23 /* first.png */,
+				AFC2E17515FAD923009A9E23 /* first@2x.png */,
+				AFC2E17715FAD923009A9E23 /* DRSecondViewController.h */,
+				AFC2E17815FAD923009A9E23 /* DRSecondViewController.m */,
+				AFC2E17A15FAD923009A9E23 /* second.png */,
+				AFC2E17C15FAD923009A9E23 /* second@2x.png */,
+				AFC2E16215FAD923009A9E23 /* Supporting Files */,
+			);
+			path = SitioTaxis;
+			sourceTree = "<group>";
+		};
+		AFC2E16215FAD923009A9E23 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AFC2E16315FAD923009A9E23 /* SitioTaxis-Info.plist */,
+				AFC2E16415FAD923009A9E23 /* InfoPlist.strings */,
+				AFC2E16715FAD923009A9E23 /* main.m */,
+				AFC2E16915FAD923009A9E23 /* SitioTaxis-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AFC2E15615FAD923009A9E23 /* SitioTaxis */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFC2E18015FAD923009A9E23 /* Build configuration list for PBXNativeTarget "SitioTaxis" */;
+			buildPhases = (
+				AFC2E15315FAD923009A9E23 /* Sources */,
+				AFC2E15415FAD923009A9E23 /* Frameworks */,
+				AFC2E15515FAD923009A9E23 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SitioTaxis;
+			productName = SitioTaxis;
+			productReference = AFC2E15715FAD923009A9E23 /* SitioTaxis.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AFC2E14E15FAD921009A9E23 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = DR;
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "Planet Media";
+			};
+			buildConfigurationList = AFC2E15115FAD921009A9E23 /* Build configuration list for PBXProject "SitioTaxis" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = AFC2E14C15FAD921009A9E23;
+			productRefGroup = AFC2E15815FAD923009A9E23 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AFC2E15615FAD923009A9E23 /* SitioTaxis */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AFC2E15515FAD923009A9E23 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFC2E16615FAD923009A9E23 /* InfoPlist.strings in Resources */,
+				AFC2E16F15FAD923009A9E23 /* MainStoryboard.storyboard in Resources */,
+				AFC2E17415FAD923009A9E23 /* first.png in Resources */,
+				AFC2E17615FAD923009A9E23 /* first@2x.png in Resources */,
+				AFC2E17B15FAD923009A9E23 /* second.png in Resources */,
+				AFC2E17D15FAD923009A9E23 /* second@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AFC2E15315FAD923009A9E23 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFC2E16815FAD923009A9E23 /* main.m in Sources */,
+				AFC2E16C15FAD923009A9E23 /* DRAppDelegate.m in Sources */,
+				AFC2E17215FAD923009A9E23 /* DRFirstViewController.m in Sources */,
+				AFC2E17915FAD923009A9E23 /* DRSecondViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AFC2E16415FAD923009A9E23 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AFC2E16515FAD923009A9E23 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		AFC2E16D15FAD923009A9E23 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AFC2E16E15FAD923009A9E23 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AFC2E17E15FAD923009A9E23 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AFC2E17F15FAD923009A9E23 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AFC2E18115FAD923009A9E23 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SitioTaxis/SitioTaxis-Prefix.pch";
+				INFOPLIST_FILE = "SitioTaxis/SitioTaxis-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		AFC2E18215FAD923009A9E23 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SitioTaxis/SitioTaxis-Prefix.pch";
+				INFOPLIST_FILE = "SitioTaxis/SitioTaxis-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AFC2E15115FAD921009A9E23 /* Build configuration list for PBXProject "SitioTaxis" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFC2E17E15FAD923009A9E23 /* Debug */,
+				AFC2E17F15FAD923009A9E23 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFC2E18015FAD923009A9E23 /* Build configuration list for PBXNativeTarget "SitioTaxis" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFC2E18115FAD923009A9E23 /* Debug */,
+				AFC2E18215FAD923009A9E23 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AFC2E14E15FAD921009A9E23 /* Project object */;
+}
