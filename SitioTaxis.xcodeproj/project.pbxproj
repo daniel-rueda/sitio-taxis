@@ -60,6 +60,7 @@
 		AFC2E18615FAF792009A9E23 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFC2E18515FAF792009A9E23 /* CoreLocation.framework */; };
 		AFF96A4315FB911C00B308A4 /* DRDelegacionesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF96A4215FB911C00B308A4 /* DRDelegacionesTableViewController.m */; };
 		AFF96A4615FB931300B308A4 /* DRSitiosDelegacionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF96A4515FB931300B308A4 /* DRSitiosDelegacionTableViewController.m */; };
+		D39BF63A15FBEFA500FFDD2D /* DRMapAndTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D39BF63915FBEFA500FFDD2D /* DRMapAndTableViewController.m */; };
 		D3A4E9A815FB218200CC9633 /* DRMapSitioPinAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = D3A4E9A715FB218200CC9633 /* DRMapSitioPinAnnotation.m */; };
 		D3B0AE6D15FB16BC005FC9B1 /* DRTableViewMapControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3B0AE6C15FB16BC005FC9B1 /* DRTableViewMapControllerViewController.m */; };
 		D3DF034D15FB9DB3005422EE /* logo_57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = D3DF034A15FB9DB3005422EE /* logo_57x57.png */; };
@@ -181,6 +182,8 @@
 		AFF96A4215FB911C00B308A4 /* DRDelegacionesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRDelegacionesTableViewController.m; sourceTree = "<group>"; };
 		AFF96A4415FB931300B308A4 /* DRSitiosDelegacionTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRSitiosDelegacionTableViewController.h; sourceTree = "<group>"; };
 		AFF96A4515FB931300B308A4 /* DRSitiosDelegacionTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRSitiosDelegacionTableViewController.m; sourceTree = "<group>"; };
+		D39BF63815FBEFA500FFDD2D /* DRMapAndTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRMapAndTableViewController.h; sourceTree = "<group>"; };
+		D39BF63915FBEFA500FFDD2D /* DRMapAndTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRMapAndTableViewController.m; sourceTree = "<group>"; };
 		D3A4E9A615FB218200CC9633 /* DRMapSitioPinAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRMapSitioPinAnnotation.h; sourceTree = "<group>"; };
 		D3A4E9A715FB218200CC9633 /* DRMapSitioPinAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRMapSitioPinAnnotation.m; sourceTree = "<group>"; };
 		D3B0AE6B15FB16BC005FC9B1 /* DRTableViewMapControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRTableViewMapControllerViewController.h; sourceTree = "<group>"; };
@@ -224,6 +227,8 @@
 				D3B0AE6C15FB16BC005FC9B1 /* DRTableViewMapControllerViewController.m */,
 				D3A4E9A615FB218200CC9633 /* DRMapSitioPinAnnotation.h */,
 				D3A4E9A715FB218200CC9633 /* DRMapSitioPinAnnotation.m */,
+				D39BF63815FBEFA500FFDD2D /* DRMapAndTableViewController.h */,
+				D39BF63915FBEFA500FFDD2D /* DRMapAndTableViewController.m */,
 			);
 			path = "Custom classes";
 			sourceTree = "<group>";
@@ -557,6 +562,7 @@
 				AF6C8A0F15FB126500750273 /* DRDataModel.m in Sources */,
 				AFF96A4315FB911C00B308A4 /* DRDelegacionesTableViewController.m in Sources */,
 				AFF96A4615FB931300B308A4 /* DRSitiosDelegacionTableViewController.m in Sources */,
+				D39BF63A15FBEFA500FFDD2D /* DRMapAndTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
