@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		AF03795815FB9D35000AFF7A /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = AF03795715FB9D35000AFF7A /* Icon.png */; };
 		AF03795A15FB9F27000AFF7A /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AF03795915FB9F27000AFF7A /* Icon@2x.png */; };
+		AF0BF59B15FBF19400A851B3 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = AF0BF59A15FBF19400A851B3 /* Default.png */; };
+		AF0BF59D15FBF19B00A851B3 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AF0BF59C15FBF19B00A851B3 /* Default@2x.png */; };
 		AF6C89FB15FB09E100750273 /* SitioTaxis.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AF6C89F915FB09E100750273 /* SitioTaxis.xcdatamodeld */; };
 		AF6C89FE15FB0E1100750273 /* Sitio.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6C89FD15FB0E1100750273 /* Sitio.m */; };
 		AF6C8A0115FB0E1200750273 /* Telefono.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6C8A0015FB0E1200750273 /* Telefono.m */; };
@@ -115,6 +117,8 @@
 /* Begin PBXFileReference section */
 		AF03795715FB9D35000AFF7A /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		AF03795915FB9F27000AFF7A /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		AF0BF59A15FBF19400A851B3 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		AF0BF59C15FBF19B00A851B3 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		AF6C89FA15FB09E100750273 /* SitioTaxis.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SitioTaxis.xcdatamodel; sourceTree = "<group>"; };
 		AF6C89FC15FB0E1100750273 /* Sitio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sitio.h; sourceTree = "<group>"; };
 		AF6C89FD15FB0E1100750273 /* Sitio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sitio.m; sourceTree = "<group>"; };
@@ -294,6 +298,8 @@
 		AFC2E14C15FAD921009A9E23 = {
 			isa = PBXGroup;
 			children = (
+				AF0BF59C15FBF19B00A851B3 /* Default@2x.png */,
+				AF0BF59A15FBF19400A851B3 /* Default.png */,
 				AF03795915FB9F27000AFF7A /* Icon@2x.png */,
 				AF03795715FB9D35000AFF7A /* Icon.png */,
 				AFC2E16115FAD923009A9E23 /* SitioTaxis */,
@@ -520,6 +526,8 @@
 				AFA8AD6215FBB8DD006B8769 /* comentarios@2x.png in Resources */,
 				AFA8AD6315FBB8DD006B8769 /* unidades.png in Resources */,
 				AFA8AD6415FBB8DD006B8769 /* unidades@2x.png in Resources */,
+				AF0BF59B15FBF19400A851B3 /* Default.png in Resources */,
+				AF0BF59D15FBF19B00A851B3 /* Default@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
