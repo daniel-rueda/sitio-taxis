@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>C.P.</key>
+		<string>06600</string>
+		<key>CALLE</key>
+		<string>MARSELLA</string>
+		<key>COLONIA</key>
+		<string>JUAREZ</string>
+		<key>DELEGACIÓN</key>
+		<string>CUAUHTÉMOC</string>
+		<key>NOMBRE</key>
+		<string> AGRUPACION DE CHOFERES NIZA, A.C. </string>
+		<key>NUMERO</key>
+		<string>72</string>
+		<key>TEL</key>
+		<string>56110288</string>
+		<key>UBICACION</key>
+		<string>19.424768, -99.160499</string>
+	</dict>
+	<dict>
+		<key>C.P.</key>
+		<string>06600</string>
+		<key>CALLE</key>
+		<string>ATENAS</string>
+		<key>COLONIA</key>
+		<string>JUÁREZ</string>
+		<key>DELEGACIÓN</key>
+		<string>CUAUHTÉMOC</string>
+		<key>NOMBRE</key>
+		<string> AGRUPACION DE GUIAS CHOFERES Y PRESTADORES DE SERVICIOS TURISTICOS DE LA REPUBLICA MEXICANA  "ADOLFO LOPEZ MATEOS", S.C. </string>
+		<key>NUMERO</key>
+		<string>77</string>
+		<key>TEL</key>
+		<string>55304715</string>
+		<key>UBICACION</key>
+		<string>19.431740, -99.155363</string>
+	</dict>
+</array>
+</plist>

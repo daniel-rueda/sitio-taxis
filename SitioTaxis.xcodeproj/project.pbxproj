@@ -35,6 +35,7 @@
 		D3DF034D15FB9DB3005422EE /* logo_57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = D3DF034A15FB9DB3005422EE /* logo_57x57.png */; };
 		D3DF034E15FB9DB3005422EE /* logo_114x114.png in Resources */ = {isa = PBXBuildFile; fileRef = D3DF034B15FB9DB3005422EE /* logo_114x114.png */; };
 		D3DF034F15FB9DB3005422EE /* pin.png in Resources */ = {isa = PBXBuildFile; fileRef = D3DF034C15FB9DB3005422EE /* pin.png */; };
+		D3DF035615FBA7F8005422EE /* address.plist in Resources */ = {isa = PBXBuildFile; fileRef = D3DF035515FBA7F8005422EE /* address.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -80,6 +81,7 @@
 		D3DF034A15FB9DB3005422EE /* logo_57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_57x57.png; sourceTree = "<group>"; };
 		D3DF034B15FB9DB3005422EE /* logo_114x114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_114x114.png; sourceTree = "<group>"; };
 		D3DF034C15FB9DB3005422EE /* pin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pin.png; sourceTree = "<group>"; };
+		D3DF035515FBA7F8005422EE /* address.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = address.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,6 +196,7 @@
 		AFC2E16115FAD923009A9E23 /* SitioTaxis */ = {
 			isa = PBXGroup;
 			children = (
+				D3DF035415FBA7D9005422EE /* Plists */,
 				D3DF034815FB9D93005422EE /* Resources */,
 				AF6C89F815FB099A00750273 /* Data model */,
 				AF6C89F215FB096A00750273 /* Custom classes */,
@@ -233,6 +236,14 @@
 				D3DF034C15FB9DB3005422EE /* pin.png */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		D3DF035415FBA7D9005422EE /* Plists */ = {
+			isa = PBXGroup;
+			children = (
+				D3DF035515FBA7F8005422EE /* address.plist */,
+			);
+			name = Plists;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -296,6 +307,7 @@
 				D3DF034D15FB9DB3005422EE /* logo_57x57.png in Resources */,
 				D3DF034E15FB9DB3005422EE /* logo_114x114.png in Resources */,
 				D3DF034F15FB9DB3005422EE /* pin.png in Resources */,
+				D3DF035615FBA7F8005422EE /* address.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
