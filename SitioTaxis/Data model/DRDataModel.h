@@ -11,6 +11,8 @@
 #import <RestKit/RestKit.h>
 #import <RestKit/CoreData.h>
 
+#import "Sitio.h"
+
 @interface DRDataModel : NSObject
 
 + (DRDataModel *)sharedModel;

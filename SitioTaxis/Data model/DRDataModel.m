@@ -39,12 +39,13 @@ static DRDataModel *_sharedInstance = nil;
 #pragma mark Sitios
 - (NSFetchedResultsController *)sitios
 {
-    return nil;
+    return [Sitio fetchAllSortedBy:@"nombre" ascending:YES withPredicate:nil groupBy:nil];
 }
 
 - (NSFetchedResultsController *)sitiosConCodigoPostal:(NSString *)codigoPostal
 {
-    return nil;
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"ubicacion.codigoPostal like %@", codigoPostal];
+    return [Sitio fetchAllSortedBy:@"nombre" ascending:YES withPredicate:predicate groupBy:nil];
 }
 
 - (NSFetchedResultsController *)sitiosConColonia:(NSString *)colonia
