@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.1" toolsVersion="2182" systemVersion="11E53" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="4">
     <dependencies>
-        <deployment defaultVersion="1296" identifier="iOS"/>
         <development defaultVersion="4200" identifier="xcode"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1181"/>
     </dependencies>
@@ -158,11 +157,11 @@
             </objects>
             <point key="canvasLocation" x="2123" y="-138"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Comentarios Table View Controller-->
         <scene sceneID="1NV-R5-icI">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LtX-cT-71O" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tableViewController id="gjT-eF-huE" sceneMemberID="viewController">
+                <tableViewController id="gjT-eF-huE" customClass="DRComentariosTableViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="HFg-19-Ycp">
                         <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -373,6 +372,9 @@
         <image name="tel_icon" width="16" height="16"/>
     </resources>
     <classes>
+        <class className="DRComentariosTableViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DRComentariosTableViewController.h"/>
+        </class>
         <class className="DRDelegacionesTableViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/DRDelegacionesTableViewController.h"/>
         </class>

@@ -7,10 +7,12 @@
 //
 
 #import "DRComentariosTableViewController.h"
+#import <Twitter/Twitter.h>
 
 @interface DRComentariosTableViewController ()
 {
     NSArray *_comentarios;
+    TWRequest *_request;
 }
 @end
 
@@ -28,6 +30,23 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    NSURL *url = [NSURL URLWithString:@"https://api.twitter.com/1.1/search/tweets.json"];
+    NSDictionary *params = [NSDictionary dictionaryWithObject:@"xtr3m0" forKey:@"q"];
+    _request = [[TWRequest alloc] initWithURL:url parameters:params requestMethod:TWRequestMethodGET];
+    [_request performRequestWithHandler:^(NSData *responseData, NSHTTPURLResponse *urlResponse, NSError *error) {
+        NSError *jsonError = nil;
+        NSJSONSerialization *json = [NSJSONSerialization JSONObjectWithData:responseData options:NSJSONWritingPrettyPrinted error:&jsonError];
+        if (!json) {
+            NSLog(@"Error %@", error);
+            return;
+        }
+        NSLog(@"%@", json);
+    }];
 }
 
 - (void)viewDidUnload
