@@ -50,6 +50,8 @@
 {
     if (indexPath.row!=1) {
         cell.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"fondo-tabla"]];
+    }else {
+        cell.backgroundView=[[UIImageView alloc]initWithImage:[UIImage imageNamed:@"5estrellas"]];
     }
         
 
@@ -69,23 +71,31 @@
     NSString* titulo=nil;
     switch (indexPath.row) {
         case 0:
-            cell.textLabel.text=@"Sitio B302 - Sultanes del Sur";
+            titulo=@"Sitio B302";
+            cell.textLabel.font=[UIFont boldSystemFontOfSize:24.0f];
+            cell.textLabel.textAlignment=UITextAlignmentCenter;
             break;
         case 2:
             icono=@"comentario.png";
             titulo=@"16 Comentarios";
+            cell.textLabel.font=[UIFont boldSystemFontOfSize:16.0f];
             break;
         case 3:
             icono=@"direccion.png";
             titulo=@"Leandro Valle 20, Colonia Centro, Del: Cuauhtemoc";
+            cell.textLabel.font=[UIFont boldSystemFontOfSize:16.0f];
+            cell.textLabel.numberOfLines=2;
             break;
         case 4:
             icono=@"telefono.png";
-            titulo=@"53 58 55 60";
+            titulo=@"56569323";
+            cell.textLabel.font=[UIFont boldSystemFontOfSize:20.0f];
             break;
         case 5:
             icono=@"representante.png";
             titulo=@"Representante: Pedro Fernandez";
+            cell.textLabel.font=[UIFont boldSystemFontOfSize:16.0f];
+            cell.textLabel.numberOfLines=2;
             break;
         default:
             break;
@@ -119,6 +129,12 @@
         [self performSegueWithIdentifier:@"pushSegue" sender:indexPath];
     }
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    if (indexPath.row==4) {
+        NSString *telefono=[[[self.tableView cellForRowAtIndexPath:indexPath] textLabel]text];
+        NSString *URLtel=[NSString stringWithFormat:@"tel://%@",telefono];
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:URLtel]];
+    }
 }
 
 @end
