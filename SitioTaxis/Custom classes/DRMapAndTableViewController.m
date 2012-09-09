@@ -8,6 +8,7 @@
 
 #import "DRMapAndTableViewController.h"
 #import "DRMapSitioPinAnnotation.h"
+#import "DRDetailSitioViewController.h"
 #import "DRSitioCell.h"
 #import "DRAppDelegate.h"
 #import "DRDatamodel.h"
@@ -16,9 +17,13 @@
 #import "Telefono.h"
 
 @interface DRMapAndTableViewController ()
+{
+    NSIndexPath* currentIndexPath;
+}
 @property(strong, nonatomic)NSMutableArray* arrCoords;
 @property(strong, nonatomic) NSArray *_sitios;
 @property(strong, nonatomic)CLLocation* currentLoc;
+
 -(void)loadAllCorrdinate;
 @end
 
@@ -141,6 +146,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    currentIndexPath=indexPath;
     UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:@"¿Qué deseas realizar?" delegate:self cancelButtonTitle:@"Cancelar" destructiveButtonTitle:nil otherButtonTitles:@"Ver información", @"Llamar", nil];
     DRAppDelegate *delegate = [UIApplication sharedApplication].delegate;
     UITabBarController *tabBarController = (UITabBarController *) delegate.window.rootViewController;
@@ -188,12 +194,16 @@
 #pragma mark - UIActionSheetDelegate
 - (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex
 {
+
+    Sitio *sitio = [[self fetchedResultsControllerSitios] objectAtIndexPath:currentIndexPath];
+    
     NSString *text = [actionSheet buttonTitleAtIndex:buttonIndex];
     if ([text isEqualToString:@"Ver información"]) {
-        [self performSegueWithIdentifier:@"pushSitioDetail" sender:[_sitios objectAtIndex:buttonIndex]];
+        [self performSegueWithIdentifier:@"pushSitioDetail" sender:sitio];
     }else if ([text isEqualToString:@"Llamar"]){
-        NSString *tel = @"9575771";
-        NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"tel://%@", tel]];
+       // NSString *tel = sitio.telefono;
+        NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"tel://%@", sitio.telefono.numero]];
+        NSLog(@"url..:%@, numero tel...%@",url, sitio.telefono.numero);
         if ([[UIApplication sharedApplication] canOpenURL:url]) {
             [[UIApplication sharedApplication] openURL:url];
         }
@@ -225,5 +235,15 @@
     }
     [self.mapa addAnnotations:arrCoords];
 }
+
+#pragma mark -
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"pushSitioDetail"]) {
+        DRDetailSitioViewController* detailView=segue.destinationViewController;
+        detailView.sitio=sender;
+    }
+}
+
 
 @end

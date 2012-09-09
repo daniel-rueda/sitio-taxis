@@ -29,7 +29,7 @@
         for (NSDictionary *dictAddres in arrayAddress) {
             Sitio* sitio=[Sitio createEntity];
             sitio.nombre=[dictAddres valueForKey:@"NOMBRE"];
-            
+            sitio.representante=[dictAddres valueForKey:@"RESPONSABLE"];
             
             Telefono *tel=[Telefono createEntity];
             tel.numero=[dictAddres valueForKey:@"TEL"];

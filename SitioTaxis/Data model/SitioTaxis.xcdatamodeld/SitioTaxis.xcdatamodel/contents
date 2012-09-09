@@ -9,8 +9,9 @@
         <relationship name="sitio" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Sitio" inverseName="comentarios" inverseEntity="Sitio" syncable="YES"/>
     </entity>
     <entity name="Sitio" representedClassName="Sitio" syncable="YES">
-        <attribute name="calificacion" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="calificacion" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="nombre" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="representante" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="comentarios" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Comentario" inverseName="sitio" inverseEntity="Comentario" syncable="YES"/>
         <relationship name="telefono" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Telefono" inverseName="sitio" inverseEntity="Telefono" syncable="YES"/>
         <relationship name="ubicacion" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Ubicacion" inverseName="sitio" inverseEntity="Ubicacion" syncable="YES"/>
@@ -28,9 +29,9 @@
         <relationship name="sitio" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Sitio" inverseName="ubicacion" inverseEntity="Sitio" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Comentario" positionX="0" positionY="0" width="0" height="0"/>
-        <element name="Sitio" positionX="0" positionY="0" width="0" height="0"/>
-        <element name="Telefono" positionX="0" positionY="0" width="0" height="0"/>
-        <element name="Ubicacion" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="Comentario" positionX="0" positionY="0" width="128" height="135"/>
+        <element name="Sitio" positionX="0" positionY="0" width="128" height="135"/>
+        <element name="Telefono" positionX="0" positionY="0" width="128" height="75"/>
+        <element name="Ubicacion" positionX="0" positionY="0" width="128" height="135"/>
     </elements>
 </model>

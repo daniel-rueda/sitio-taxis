@@ -1,20 +1,24 @@
 //
 //  Sitio.m
-//  SitioTaxis
+//  RestKit
 //
-//  Created by Daniel Rueda Jimenez on 9/8/12.
-//  Copyright (c) 2012 Planet Media. All rights reserved.
+//  Created by Claudia Patricia Orta on 9/9/12.
+//  Copyright (c) 2012 RestKit. All rights reserved.
 //
 
 #import "Sitio.h"
+#import "Comentario.h"
+#import "Telefono.h"
+#import "Ubicacion.h"
 
 
 @implementation Sitio
 
-@dynamic nombre;
 @dynamic calificacion;
+@dynamic nombre;
+@dynamic representante;
 @dynamic comentarios;
-@dynamic ubicacion;
 @dynamic telefono;
+@dynamic ubicacion;
 
 @end

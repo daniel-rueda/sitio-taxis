@@ -377,46 +377,12 @@
         <image name="mapa_tabIcon" width="16" height="16"/>
         <image name="tel_icon" width="16" height="16"/>
     </resources>
-    <classes>
-        <class className="DRComentariosTableViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/DRComentariosTableViewController.h"/>
-        </class>
-        <class className="DRDelegacionesTableViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/DRDelegacionesTableViewController.h"/>
-        </class>
-        <class className="DRDetailSitioViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/DRDetailSitioViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
-            </relationships>
-        </class>
-        <class className="DRMapAndTableViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/DRMapAndTableViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="mapa" candidateClass="MKMapView"/>
-                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
-            </relationships>
-        </class>
-        <class className="DRSitioCell" superclassName="UITableViewCell">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/DRSitioCell.h"/>
-            <relationships>
-                <relationship kind="action" name="telefonoSeleccionado:"/>
-                <relationship kind="outlet" name="distanciaSitio" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="nombreSitio" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="rating" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="telefonoSitio" candidateClass="UIButton"/>
-            </relationships>
-        </class>
-        <class className="DRSitiosDelegacionTableViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/DRSitiosDelegacionTableViewController.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="cnW-sW-Aj5"/>
+        <segue reference="iZb-P5-p31"/>
     </inferredMetricsTieBreakers>
 </document>
