@@ -9,6 +9,7 @@
 #import "DRComentariosTableViewController.h"
 #import <Accounts/Accounts.h>
 #import <Twitter/Twitter.h>
+#import "MessageTableViewCell.h"
 
 @interface DRComentariosTableViewController ()
 {
@@ -97,15 +98,13 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"comentarioCell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    
+    static NSString *CellIdentifier = @"commentsCell";
+    MessageTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    if (!cell) {
+        cell = [[MessageTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+    }
     NSDictionary *tweet = [_comentarios objectAtIndex:indexPath.row];
-    NSDictionary *user = [tweet objectForKey:@"user"];
-    
-    cell.textLabel.text = [user objectForKey:@"screen_name"];
-    cell.detailTextLabel.text = [tweet objectForKey:@"text"];
-    
+    [cell setComment:tweet];
     return cell;
 }
 
@@ -114,6 +113,14 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSDictionary *tweet = [_comentarios objectAtIndex:indexPath.row];
+    NSString *text = [tweet objectForKey:@"text"];
+    CGSize size = [SpeechBubbleView sizeForText:text];
+    return size.height + 25;
 }
 
 @end
