@@ -7,6 +7,8 @@
 //
 
 #import "DRDetailSitioViewController.h"
+#import "Ubicacion.h"
+#import "Telefono.h"
 
 @interface DRDetailSitioViewController ()
 
@@ -14,6 +16,7 @@
 
 @implementation DRDetailSitioViewController
 @synthesize tableView = _tableView;
+@synthesize sitio;
 
 - (void)viewDidLoad
 {
@@ -72,6 +75,7 @@
     }
     NSString* icono=nil;
     NSString* titulo=nil;
+    NSString* strAddress;
     switch (indexPath.row) {
         case 0:
             titulo=@"Sitio B302";
@@ -80,23 +84,24 @@
             break;
         case 2:
             icono=@"comentario.png";
-            titulo=@"16 Comentarios";
+            titulo=@"Ver Comentarios";
             cell.textLabel.font=[UIFont boldSystemFontOfSize:16.0f];
             break;
         case 3:
             icono=@"direccion.png";
-            titulo=@"Leandro Valle 20, Colonia Centro, Del: Cuauhtemoc";
+            strAddress=[NSString stringWithFormat:@"CALLE %@, COLONIA %@, DELEGACION %@", sitio.ubicacion.calle, sitio.ubicacion.colonia, sitio.ubicacion.delegacion];
+            titulo=strAddress;
             cell.textLabel.font=[UIFont boldSystemFontOfSize:16.0f];
             cell.textLabel.numberOfLines=2;
             break;
         case 4:
             icono=@"telefono.png";
-            titulo=@"56569323";
+            titulo=sitio.telefono.numero;
             cell.textLabel.font=[UIFont boldSystemFontOfSize:20.0f];
             break;
         case 5:
             icono=@"representante.png";
-            titulo=@"Representante: Pedro Fernandez";
+            titulo=[NSString stringWithFormat:@"REPRESENTANTE: %@",sitio.representante];
             cell.textLabel.font=[UIFont boldSystemFontOfSize:16.0f];
             cell.textLabel.numberOfLines=2;
             break;

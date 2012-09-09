@@ -21,7 +21,6 @@
 		AF68F5E315FC15FA00D824F7 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF68F5E215FC15FA00D824F7 /* Twitter.framework */; };
 		AF68F5E515FC37B300D824F7 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF68F5E415FC37B300D824F7 /* Accounts.framework */; };
 		AF6C89FB15FB09E100750273 /* SitioTaxis.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AF6C89F915FB09E100750273 /* SitioTaxis.xcdatamodeld */; };
-		AF6C89FE15FB0E1100750273 /* Sitio.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6C89FD15FB0E1100750273 /* Sitio.m */; };
 		AF6C8A0115FB0E1200750273 /* Telefono.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6C8A0015FB0E1200750273 /* Telefono.m */; };
 		AF6C8A0415FB0E1200750273 /* Ubicacion.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6C8A0315FB0E1200750273 /* Ubicacion.m */; };
 		AF6C8A0715FB0E1200750273 /* Comentario.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6C8A0615FB0E1200750273 /* Comentario.m */; };
@@ -150,6 +149,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2069024715FD361A0022B53C /* Sitio.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Sitio.h; sourceTree = "<group>"; };
+		2069024815FD361A0022B53C /* Sitio.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Sitio.m; sourceTree = "<group>"; };
 		2088649315FCF526008F2A5F /* addressOut.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = addressOut.plist; sourceTree = "<group>"; };
 		2088649715FCF5E5008F2A5F /* DRLoadAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRLoadAddress.h; sourceTree = "<group>"; };
 		2088649815FCF5E5008F2A5F /* DRLoadAddress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRLoadAddress.m; sourceTree = "<group>"; };
@@ -166,8 +167,6 @@
 		AF68F5E215FC15FA00D824F7 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
 		AF68F5E415FC37B300D824F7 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		AF6C89FA15FB09E100750273 /* SitioTaxis.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SitioTaxis.xcdatamodel; sourceTree = "<group>"; };
-		AF6C89FC15FB0E1100750273 /* Sitio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sitio.h; sourceTree = "<group>"; };
-		AF6C89FD15FB0E1100750273 /* Sitio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sitio.m; sourceTree = "<group>"; };
 		AF6C89FF15FB0E1200750273 /* Telefono.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Telefono.h; sourceTree = "<group>"; };
 		AF6C8A0015FB0E1200750273 /* Telefono.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Telefono.m; sourceTree = "<group>"; };
 		AF6C8A0215FB0E1200750273 /* Ubicacion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ubicacion.h; sourceTree = "<group>"; };
@@ -369,13 +368,13 @@
 			children = (
 				AF6C89F915FB09E100750273 /* SitioTaxis.xcdatamodeld */,
 				AF6C8A0515FB0E1200750273 /* Comentario.h */,
+				2069024715FD361A0022B53C /* Sitio.h */,
+				2069024815FD361A0022B53C /* Sitio.m */,
 				AF6C8A0615FB0E1200750273 /* Comentario.m */,
 				AF6C8A0215FB0E1200750273 /* Ubicacion.h */,
 				AF6C8A0315FB0E1200750273 /* Ubicacion.m */,
 				AF6C89FF15FB0E1200750273 /* Telefono.h */,
 				AF6C8A0015FB0E1200750273 /* Telefono.m */,
-				AF6C89FC15FB0E1100750273 /* Sitio.h */,
-				AF6C89FD15FB0E1100750273 /* Sitio.m */,
 				AF6C8A0D15FB126500750273 /* DRDataModel.h */,
 				AF6C8A0E15FB126500750273 /* DRDataModel.m */,
 			);
@@ -722,7 +721,6 @@
 				AFC2E17215FAD923009A9E23 /* DRFirstViewController.m in Sources */,
 				AFC2E17915FAD923009A9E23 /* DRSecondViewController.m in Sources */,
 				AF6C89FB15FB09E100750273 /* SitioTaxis.xcdatamodeld in Sources */,
-				AF6C89FE15FB0E1100750273 /* Sitio.m in Sources */,
 				AF6C8A0115FB0E1200750273 /* Telefono.m in Sources */,
 				AF6C8A0415FB0E1200750273 /* Ubicacion.m in Sources */,
 				AF6C8A0715FB0E1200750273 /* Comentario.m in Sources */,

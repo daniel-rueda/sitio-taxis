@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Sitio.h"
 
 @interface DRDetailSitioViewController : UIViewController <UITableViewDataSource,UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
-
+@property (strong, nonatomic) Sitio* sitio;
 @end
