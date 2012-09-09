@@ -10,6 +10,7 @@
 #import <Accounts/Accounts.h>
 #import <Twitter/Twitter.h>
 #import "MessageTableViewCell.h"
+#import "MBProgressHUD.h"
 
 @interface DRComentariosTableViewController ()
 {
@@ -40,7 +41,6 @@
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
-    
     ACAccountStore *store = [[ACAccountStore alloc] init];
     ACAccountType *twitterAccountType = [store accountTypeWithAccountTypeIdentifier:ACAccountTypeIdentifierTwitter];
     [store requestAccessToAccountsWithType:twitterAccountType withCompletionHandler:^(BOOL granted, NSError *error) {
@@ -52,6 +52,10 @@
         }else {
             NSArray *twitterAccounts = [store accountsWithAccountType:twitterAccountType];
             if ([twitterAccounts count] > 0) {
+                [[NSOperationQueue mainQueue] addOperationWithBlock:^{
+                    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.navigationController.view animated:YES];
+                    hud.labelText = @"Obteniendo comentarios";
+                }];
                 ACAccount *account = [twitterAccounts objectAtIndex:0];
                 NSURL *url = [NSURL URLWithString:@"https://api.twitter.com/1.1/search/tweets.json"];
                 NSDictionary *params = [NSDictionary dictionaryWithObject:_query forKey:@"q"];
@@ -72,6 +76,9 @@
                             NSLog(@"%@", jsonError);
                         }
                     }
+                    [[NSOperationQueue mainQueue] addOperationWithBlock:^{
+                        [MBProgressHUD hideHUDForView:self.navigationController.view animated:YES];
+                    }];
                 }];
             }else {
                 [[NSOperationQueue mainQueue] addOperationWithBlock:^{

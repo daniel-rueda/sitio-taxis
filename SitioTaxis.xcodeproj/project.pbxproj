@@ -72,6 +72,7 @@
 		AFC2E17D15FAD923009A9E23 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AFC2E17C15FAD923009A9E23 /* second@2x.png */; };
 		AFC2E18415FAF782009A9E23 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFC2E18315FAF782009A9E23 /* MapKit.framework */; };
 		AFC2E18615FAF792009A9E23 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFC2E18515FAF792009A9E23 /* CoreLocation.framework */; };
+		AFCFE2BF15FD128400090403 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCFE2BE15FD128400090403 /* MBProgressHUD.m */; };
 		AFF96A4315FB911C00B308A4 /* DRDelegacionesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF96A4215FB911C00B308A4 /* DRDelegacionesTableViewController.m */; };
 		AFF96A4615FB931300B308A4 /* DRSitiosDelegacionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF96A4515FB931300B308A4 /* DRSitiosDelegacionTableViewController.m */; };
 		D3376F3F15FC16E600478CA0 /* DRDetailSitioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3376F3E15FC16E600478CA0 /* DRDetailSitioViewController.m */; };
@@ -230,6 +231,8 @@
 		AFC2E17C15FAD923009A9E23 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
 		AFC2E18315FAF782009A9E23 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		AFC2E18515FAF792009A9E23 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		AFCFE2BD15FD128400090403 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		AFCFE2BE15FD128400090403 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		AFF96A4115FB911C00B308A4 /* DRDelegacionesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRDelegacionesTableViewController.h; sourceTree = "<group>"; };
 		AFF96A4215FB911C00B308A4 /* DRDelegacionesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRDelegacionesTableViewController.m; sourceTree = "<group>"; };
 		AFF96A4415FB931300B308A4 /* DRSitiosDelegacionTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRSitiosDelegacionTableViewController.h; sourceTree = "<group>"; };
@@ -437,6 +440,7 @@
 		AFC2E16115FAD923009A9E23 /* SitioTaxis */ = {
 			isa = PBXGroup;
 			children = (
+				AFCFE2BC15FD128400090403 /* MBProgressHUD */,
 				2088649615FCF52B008F2A5F /* DireccionesPlist */,
 				D3DF035415FBA7D9005422EE /* Plists */,
 				D3DF034815FB9D93005422EE /* Resources */,
@@ -468,6 +472,15 @@
 				AFC2E16915FAD923009A9E23 /* SitioTaxis-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AFCFE2BC15FD128400090403 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				AFCFE2BD15FD128400090403 /* MBProgressHUD.h */,
+				AFCFE2BE15FD128400090403 /* MBProgressHUD.m */,
+			);
+			path = MBProgressHUD;
 			sourceTree = "<group>";
 		};
 		D3376F4015FC1DB900478CA0 /* Resources For MapDetail */ = {
@@ -725,6 +738,7 @@
 				2088649915FCF5E5008F2A5F /* DRLoadAddress.m in Sources */,
 				AFAE457A15FCEDD200832EA7 /* MessageTableViewCell.m in Sources */,
 				AFAE457B15FCEDD200832EA7 /* SpeechBubbleView.m in Sources */,
+				AFCFE2BF15FD128400090403 /* MBProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
