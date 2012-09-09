@@ -73,6 +73,12 @@
                         }
                     }
                 }];
+            }else {
+                [[NSOperationQueue mainQueue] addOperationWithBlock:^{
+                    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"No tienes cuenta de Twitter configurada" delegate:nil cancelButtonTitle:@"Aceptar" otherButtonTitles:nil];
+                    [alert show];
+                    [self.navigationController popViewControllerAnimated:YES];
+                }];
             }
         }
     }];

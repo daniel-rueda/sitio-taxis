@@ -34,7 +34,11 @@
 
 - (IBAction)telefonoSeleccionado:(id)sender
 {
-    NSLog(@"Boton presionado");
+    NSString *tel = [_telefonoSitio.titleLabel.text stringByReplacingOccurrencesOfString:@" " withString:@""];
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"tel://%@", tel]];
+    if ([[UIApplication sharedApplication] canOpenURL:url]) {
+        [[UIApplication sharedApplication] openURL:url];
+    }
 }
 
 @end

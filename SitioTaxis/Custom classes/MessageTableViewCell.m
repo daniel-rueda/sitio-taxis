@@ -61,7 +61,7 @@ static UIColor* color = nil;
 	NSString *senderName = [user objectForKey:@"screen_name"];
     NSString *text = [comment objectForKey:@"text"];
     
-	label.textAlignment = UITextAlignmentLeft;
+	label.textAlignment = UITextAlignmentRight;
 
 	// Resize the bubble view and tell it to display the message text
 	CGRect rect;
