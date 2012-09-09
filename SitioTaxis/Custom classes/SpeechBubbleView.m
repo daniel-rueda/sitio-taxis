@@ -10,7 +10,7 @@ const CGFloat HorzPadding = 4;
 const CGFloat TextLeftMargin = 17;   // insets for the text
 const CGFloat TextRightMargin = 15;
 const CGFloat TextTopMargin = 10;
-const CGFloat TextBottomMargin = 11;
+const CGFloat TextBottomMargin = 14;
 
 const CGFloat MinBubbleWidth = 100;   // minimum width of the bubble
 const CGFloat MinBubbleHeight = 40;  // minimum height of the bubble
