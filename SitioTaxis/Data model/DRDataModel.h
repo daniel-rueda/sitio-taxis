@@ -15,7 +15,11 @@
 
 @interface DRDataModel : NSObject
 
+@property (nonatomic, strong) RKObjectManager *manager;
+
 + (DRDataModel *)sharedModel;
+
+- (BOOL)saveChanges;
 
 - (NSFetchedResultsController *)sitios;
 - (NSFetchedResultsController *)sitiosConCodigoPostal:(NSString *)codigoPostal;
