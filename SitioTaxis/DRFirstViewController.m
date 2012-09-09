@@ -31,4 +31,8 @@
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
 }
 
+- (IBAction)comentarios:(id)sender {
+    [self performSegueWithIdentifier:@"pushSegue" sender:sender];
+}
+
 @end

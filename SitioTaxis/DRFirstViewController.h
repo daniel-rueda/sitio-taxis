@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface DRFirstViewController : UIViewController
+- (IBAction)comentarios:(id)sender;
 
 @end

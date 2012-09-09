@@ -17,6 +17,7 @@
 		AF68F5DE15FC12BD00D824F7 /* mapa_tabIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AF68F5DA15FC12BD00D824F7 /* mapa_tabIcon@2x.png */; };
 		AF68F5E115FC150C00D824F7 /* DRComentariosTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF68F5E015FC150C00D824F7 /* DRComentariosTableViewController.m */; };
 		AF68F5E315FC15FA00D824F7 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF68F5E215FC15FA00D824F7 /* Twitter.framework */; };
+		AF68F5E515FC37B300D824F7 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF68F5E415FC37B300D824F7 /* Accounts.framework */; };
 		AF6C89FB15FB09E100750273 /* SitioTaxis.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AF6C89F915FB09E100750273 /* SitioTaxis.xcdatamodeld */; };
 		AF6C89FE15FB0E1100750273 /* Sitio.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6C89FD15FB0E1100750273 /* Sitio.m */; };
 		AF6C8A0115FB0E1200750273 /* Telefono.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6C8A0015FB0E1200750273 /* Telefono.m */; };
@@ -134,6 +135,7 @@
 		AF68F5DF15FC150C00D824F7 /* DRComentariosTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRComentariosTableViewController.h; sourceTree = "<group>"; };
 		AF68F5E015FC150C00D824F7 /* DRComentariosTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRComentariosTableViewController.m; sourceTree = "<group>"; };
 		AF68F5E215FC15FA00D824F7 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
+		AF68F5E415FC37B300D824F7 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		AF6C89FA15FB09E100750273 /* SitioTaxis.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SitioTaxis.xcdatamodel; sourceTree = "<group>"; };
 		AF6C89FC15FB0E1100750273 /* Sitio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sitio.h; sourceTree = "<group>"; };
 		AF6C89FD15FB0E1100750273 /* Sitio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sitio.m; sourceTree = "<group>"; };
@@ -216,6 +218,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF68F5E515FC37B300D824F7 /* Accounts.framework in Frameworks */,
 				AF68F5E315FC15FA00D824F7 /* Twitter.framework in Frameworks */,
 				AF6C8A4615FB1FA100750273 /* CFNetwork.framework in Frameworks */,
 				AF6C8A4415FB1F1200750273 /* MobileCoreServices.framework in Frameworks */,
@@ -342,6 +345,7 @@
 		AFC2E15A15FAD923009A9E23 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AF68F5E415FC37B300D824F7 /* Accounts.framework */,
 				AF68F5E215FC15FA00D824F7 /* Twitter.framework */,
 				AF6C8A4515FB1FA100750273 /* CFNetwork.framework */,
 				AF6C8A4315FB1F1200750273 /* MobileCoreServices.framework */,

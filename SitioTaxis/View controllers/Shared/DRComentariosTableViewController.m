@@ -7,6 +7,7 @@
 //
 
 #import "DRComentariosTableViewController.h"
+#import <Accounts/Accounts.h>
 #import <Twitter/Twitter.h>
 
 @interface DRComentariosTableViewController ()
@@ -35,17 +36,38 @@
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
-    NSURL *url = [NSURL URLWithString:@"https://api.twitter.com/1.1/search/tweets.json"];
-    NSDictionary *params = [NSDictionary dictionaryWithObject:@"xtr3m0" forKey:@"q"];
-    _request = [[TWRequest alloc] initWithURL:url parameters:params requestMethod:TWRequestMethodGET];
-    [_request performRequestWithHandler:^(NSData *responseData, NSHTTPURLResponse *urlResponse, NSError *error) {
-        NSError *jsonError = nil;
-        NSJSONSerialization *json = [NSJSONSerialization JSONObjectWithData:responseData options:NSJSONWritingPrettyPrinted error:&jsonError];
-        if (!json) {
-            NSLog(@"Error %@", error);
-            return;
+    
+    ACAccountStore *store = [[ACAccountStore alloc] init];
+    ACAccountType *twitterAccountType = 
+    [store accountTypeWithAccountTypeIdentifier:ACAccountTypeIdentifierTwitter];
+    [store requestAccessToAccountsWithType:twitterAccountType withCompletionHandler:^(BOOL granted, NSError *error) {
+        if (!granted) {
+            NSLog(@"User rejected access to the account.");
+            [self.navigationController popViewControllerAnimated:YES];
+        }else {
+            NSArray *twitterAccounts = [store accountsWithAccountType:twitterAccountType];
+            if ([twitterAccounts count] > 0) {
+                ACAccount *account = [twitterAccounts objectAtIndex:0];
+                NSURL *url = [NSURL URLWithString:@"https://api.twitter.com/1.1/search/tweets.json"];
+                NSDictionary *params = [NSDictionary dictionaryWithObject:@"xtr3m0" forKey:@"q"];
+                _request = [[TWRequest alloc] initWithURL:url 
+                                               parameters:params
+                                            requestMethod:TWRequestMethodGET];
+                [_request setAccount:account];
+                [_request performRequestWithHandler:^(NSData *responseData, NSHTTPURLResponse *urlResponse, NSError *error) {
+                    if (responseData) {
+                        NSError *jsonError;
+                        id tweets = [NSJSONSerialization JSONObjectWithData:responseData options:NSJSONReadingMutableLeaves error:&jsonError];
+                        if (tweets && [tweets isKindOfClass:[NSDictionary class]]) {
+                            _comentarios = [tweets objectForKey:@"statuses"];
+                            [self.tableView reloadData];
+                        }else {
+                            NSLog(@"%@", jsonError);
+                        }
+                    }
+                }];
+            }
         }
-        NSLog(@"%@", json);
     }];
 }
 
@@ -69,10 +91,14 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Cell";
+    static NSString *CellIdentifier = @"comentarioCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
-    cell.textLabel.text = @"Hola mundo";
+    NSDictionary *tweet = [_comentarios objectAtIndex:indexPath.row];
+    NSDictionary *user = [tweet objectForKey:@"user"];
+    
+    cell.textLabel.text = [user objectForKey:@"screen_name"];
+    cell.detailTextLabel.text = [tweet objectForKey:@"text"];
     
     return cell;
 }
