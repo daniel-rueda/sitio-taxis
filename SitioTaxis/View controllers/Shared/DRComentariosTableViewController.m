@@ -61,8 +61,10 @@
                         NSError *jsonError;
                         id tweets = [NSJSONSerialization JSONObjectWithData:responseData options:NSJSONReadingMutableLeaves error:&jsonError];
                         if (tweets && [tweets isKindOfClass:[NSDictionary class]]) {
-                            _comentarios = [tweets objectForKey:@"statuses"];
-                            [self.tableView reloadData];
+                            [[NSOperationQueue mainQueue] addOperationWithBlock:^{
+                                _comentarios = [tweets objectForKey:@"statuses"];
+                                [self.tableView reloadData];
+                            }];
                         }else {
                             NSLog(@"%@", jsonError);
                         }
