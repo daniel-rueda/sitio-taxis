@@ -14,6 +14,7 @@
 {
     NSArray *_comentarios;
     TWRequest *_request;
+    NSString *_query;
 }
 @end
 
@@ -31,6 +32,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.title = @"Comentarios";
+    _query = @"#CMDF2";
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -38,8 +41,7 @@
     [super viewDidAppear:animated];
     
     ACAccountStore *store = [[ACAccountStore alloc] init];
-    ACAccountType *twitterAccountType = 
-    [store accountTypeWithAccountTypeIdentifier:ACAccountTypeIdentifierTwitter];
+    ACAccountType *twitterAccountType = [store accountTypeWithAccountTypeIdentifier:ACAccountTypeIdentifierTwitter];
     [store requestAccessToAccountsWithType:twitterAccountType withCompletionHandler:^(BOOL granted, NSError *error) {
         if (!granted) {
             NSLog(@"User rejected access to the account.");
@@ -49,7 +51,7 @@
             if ([twitterAccounts count] > 0) {
                 ACAccount *account = [twitterAccounts objectAtIndex:0];
                 NSURL *url = [NSURL URLWithString:@"https://api.twitter.com/1.1/search/tweets.json"];
-                NSDictionary *params = [NSDictionary dictionaryWithObject:@"xtr3m0" forKey:@"q"];
+                NSDictionary *params = [NSDictionary dictionaryWithObject:_query forKey:@"q"];
                 _request = [[TWRequest alloc] initWithURL:url 
                                                parameters:params
                                             requestMethod:TWRequestMethodGET];
