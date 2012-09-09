@@ -36,7 +36,7 @@
     [self.mapa setDelegate:self];
     [self.tableView setDelegate:self];
     [self.mapa setShowsUserLocation:YES];
-    self.title = @"Sitios";
+    self.title = @"Sitio de Taxis";
     
     //[self.tableView setContentOffset:CGPointMake(0, self.mapa.frame.size.height)];
     _sitios = [NSArray arrayWithObjects:@"Sitio 01", @"Sitio 02", @"Sitio 03", @"Sitio 04", @"Sitio 05", @"Sitio 06", @"Sitio 07", @"Sitio 08", @"Sitio 09", @"Sitio 10", nil];

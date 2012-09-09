@@ -133,24 +133,30 @@
             </objects>
             <point key="canvasLocation" x="1536" y="-139"/>
         </scene>
-        <!--First View Controller-->
+        <!--Detail Sitio View Controller-->
         <scene sceneID="Mtz-zB-6cG">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P2c-A0-s5d" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="LRx-tB-4rq" customClass="DRFirstViewController" sceneMemberID="viewController">
+                <viewController id="LRx-tB-4rq" customClass="DRDetailSitioViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yXK-CJ-uIg">
                         <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="3aX-6T-Op3">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="61" sectionHeaderHeight="22" sectionFooterHeight="22" id="HEG-Nc-r0L">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="367"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                            </mapView>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="LRx-tB-4rq" id="TKO-3i-qyy"/>
+                                    <outlet property="delegate" destination="LRx-tB-4rq" id="oPA-gh-Wmv"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="S3u-Tq-tvc"/>
                     <connections>
+                        <outlet property="tableView" destination="HEG-Nc-r0L" id="Yt6-BY-3Rp"/>
                         <segue destination="gjT-eF-huE" kind="push" identifier="pushSegue" id="6HS-mh-wro"/>
                     </connections>
                 </viewController>
@@ -378,10 +384,10 @@
         <class className="DRDelegacionesTableViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/DRDelegacionesTableViewController.h"/>
         </class>
-        <class className="DRFirstViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/DRFirstViewController.h"/>
+        <class className="DRDetailSitioViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DRDetailSitioViewController.h"/>
             <relationships>
-                <relationship kind="action" name="comentarios:"/>
+                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
             </relationships>
         </class>
         <class className="DRMapAndTableViewController" superclassName="UIViewController">
