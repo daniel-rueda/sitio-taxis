@@ -45,7 +45,9 @@
     [store requestAccessToAccountsWithType:twitterAccountType withCompletionHandler:^(BOOL granted, NSError *error) {
         if (!granted) {
             NSLog(@"User rejected access to the account.");
-            [self.navigationController popViewControllerAnimated:YES];
+            [[NSOperationQueue mainQueue] addOperationWithBlock:^{
+                [self.navigationController popViewControllerAnimated:YES];
+            }];
         }else {
             NSArray *twitterAccounts = [store accountsWithAccountType:twitterAccountType];
             if ([twitterAccounts count] > 0) {
