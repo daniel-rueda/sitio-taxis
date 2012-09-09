@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "Sitio.h"
 
-@interface DRSitioCell : UITableViewCell
+@interface DRSitioCell : UITableViewCell<UIAlertViewDelegate>
 
 @property (nonatomic, strong) Sitio *sitio;
 

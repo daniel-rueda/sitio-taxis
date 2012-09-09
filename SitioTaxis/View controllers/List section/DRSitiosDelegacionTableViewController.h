@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DRSitiosDelegacionTableViewController : UITableViewController
+@interface DRSitiosDelegacionTableViewController : UITableViewController<UIActionSheetDelegate>
 
 @end

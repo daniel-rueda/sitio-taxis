@@ -34,10 +34,22 @@
 
 - (IBAction)telefonoSeleccionado:(id)sender
 {
-    NSString *tel = [_telefonoSitio.titleLabel.text stringByReplacingOccurrencesOfString:@" " withString:@""];
-    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"tel://%@", tel]];
-    if ([[UIApplication sharedApplication] canOpenURL:url]) {
-        [[UIApplication sharedApplication] openURL:url];
+    /*NSString *message = [NSString stringWithFormat:@"¿Desea realizar la llamada al %@?", _telefonoSitio.titleLabel.text];
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Informacion" message:message delegate:self cancelButtonTitle:@"Cancelar" otherButtonTitles:@"Aceptar", nil];
+    [alertView show];
+     */
+}
+
+#pragma mark - UIAlertViewDelegate
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    NSString *text = [alertView buttonTitleAtIndex:buttonIndex];
+    if ([text isEqualToString:@"Aceptar"]) {
+        NSString *tel = [_telefonoSitio.titleLabel.text stringByReplacingOccurrencesOfString:@" " withString:@""];
+        NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"tel://%@", tel]];
+        if ([[UIApplication sharedApplication] canOpenURL:url]) {
+            [[UIApplication sharedApplication] openURL:url];
+        }
     }
 }
 

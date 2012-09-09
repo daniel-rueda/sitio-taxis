@@ -9,6 +9,7 @@
 #import "DRMapAndTableViewController.h"
 #import "DRMapSitioPinAnnotation.h"
 #import "DRSitioCell.h"
+#import "DRAppDelegate.h"
 
 @interface DRMapAndTableViewController ()
 {
@@ -18,7 +19,7 @@
 
 @implementation DRMapAndTableViewController
 @synthesize mapa;
-@synthesize tableView;
+@synthesize tableView = _tableView;
 @synthesize coordinate;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -91,6 +92,11 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:@"¿Qué deseas realizar?" delegate:self cancelButtonTitle:@"Cancelar" destructiveButtonTitle:nil otherButtonTitles:@"Ver información", @"Llamar", nil];
+    DRAppDelegate *delegate = [UIApplication sharedApplication].delegate;
+    UITabBarController *tabBarController = (UITabBarController *) delegate.window.rootViewController;
+    [actionSheet showFromTabBar:tabBarController.tabBar];
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
     [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
@@ -125,6 +131,21 @@
 	else{
 	    return nil;
 	}
+}
+
+#pragma mark - UIActionSheetDelegate
+- (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    NSString *text = [actionSheet buttonTitleAtIndex:buttonIndex];
+    if ([text isEqualToString:@"Ver información"]) {
+        [self performSegueWithIdentifier:@"pushSitioDetail" sender:[_sitios objectAtIndex:buttonIndex]];
+    }else if ([text isEqualToString:@"Llamar"]){
+        NSString *tel = @"9575771";
+        NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"tel://%@", tel]];
+        if ([[UIApplication sharedApplication] canOpenURL:url]) {
+            [[UIApplication sharedApplication] openURL:url];
+        }
+    }
 }
 
 
