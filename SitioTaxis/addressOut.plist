@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>C.P.</key>
+		<string>06500</string>
+		<key>CALLE</key>
+		<string>RÍO SENA</string>
+		<key>COLONIA</key>
+		<string>CUAUHTÉMOC</string>
+		<key>DELEGACIÓN</key>
+		<string>CUAUHTÉMOC</string>
+		<key>NOMBRE</key>
+		<string>AGRUPACION DE GUIAS CHOFERES Y PRESTADORES DE SERVICIOS TURISTICOS DE LA REPUBLICA MEXICANA  &quot;ADOLFO LOPEZ MATEOS&quot;, S.C. </string>
+		<key>NUMERO</key>
+		<string>72</string>
+		<key>TEL</key>
+		<string>55304715</string>
+		<key>UBICACION</key>
+		<string>19.430473, -99.166043</string>
+		<key>RESPONSABLE</key>
+		<string>MARTÍN VALLEJO RAMÍREZ</string>
+	</dict>
+	<dict>
+		<key>C.P.</key>
+		<string>06010</string>
+		<key>CALLE</key>
+		<string>EJE CENTRAL LÁZARO CÁRDENAS </string>
+		<key>COLONIA</key>
+		<string>CENTRO</string>
+		<key>DELEGACIÓN</key>
+		<string>CUAUHTÉMOC</string>
+		<key>NOMBRE</key>
+		<string>AGRUPACION DE GUIAS CHOFERES Y PRESTADORES DE SERVICIOS TURISTICOS DE LA REPUBLICA MEXICANA  &quot;ADOLFO LOPEZ MATEOS&quot;, S.C. </string>
+		<key>NUMERO</key>
+		<string>32</string>
+		<key>TEL</key>
+		<string>55304715</string>
+		<key>UBICACION</key>
+		<string>19.404013, -99.144943</string>
+		<key>RESPONSABLE</key>
+		<string>MARTÍN VALLEJO RAMÍREZ</string>
+	</dict>
+	<dict>
+		<key>C.P.</key>
+		<string>06010</string>
+		<key>CALLE</key>
+		<string>REPÚBLICA DE HONDURAS</string>
+		<key>COLONIA</key>
+		<string>CENTRO</string>
+		<key>DELEGACIÓN</key>
+		<string>CUAUHTÉMOC</string>
+		<key>NOMBRE</key>
+		<string>AGRUPACION DE GUIAS CHOFERES Y PRESTADORES DE SERVICIOS TURISTICOS DE LA REPUBLICA MEXICANA  &quot;ADOLFO LOPEZ MATEOS&quot;, S.C. </string>
+		<key>NUMERO</key>
+		<string>56</string>
+		<key>TEL</key>
+		<string>55304715</string>
+		<key>UBICACION</key>
+		<string>19.440984, -99.134780</string>
+		<key>RESPONSABLE</key>
+		<string>MARTÍN VALLEJO RAMÍREZ</string>
+	</dict>
+	<dict>
+		<key>C.P.</key>
+		<string>06010</string>
+		<key>CALLE</key>
+		<string>REPÚBLICA DE HONDURAS NORTE</string>
+		<key>COLONIA</key>
+		<string>CENTRO</string>
+		<key>DELEGACIÓN</key>
+		<string>CUAUHTÉMOC</string>
+		<key>NOMBRE</key>
+		<string>AGRUPACION DE GUIAS CHOFERES Y PRESTADORES DE SERVICIOS TURISTICOS DE LA REPUBLICA MEXICANA  &quot;ADOLFO LOPEZ MATEOS&quot;, S.C. </string>
+		<key>NUMERO</key>
+		<string>14</string>
+		<key>TEL</key>
+		<string>55304715</string>
+		<key>UBICACION</key>
+		<string>19.441249, -99.135832</string>
+		<key>RESPONSABLE</key>
+		<string>MARTÍN VALLEJO RAMÍREZ</string>
+	</dict>
+	<dict>
+		<key>C.P.</key>
+		<string>06700</string>
+		<key>CALLE</key>
+		<string>TEPIC NORTE</string>
+		<key>COLONIA</key>
+		<string>ROMA SUR</string>
+		<key>DELEGACIÓN</key>
+		<string>CUAUHTÉMOC</string>
+		<key>NOMBRE</key>
+		<string>SITIO ROMA 140, A.C.</string>
+		<key>NUMERO</key>
+		<string>141</string>
+		<key>TEL</key>
+		<string>55643730</string>
+		<key>UBICACION</key>
+		<string>19.406309, -99.167532</string>
+		<key>RESPONSABLE</key>
+		<string>JOSÉ LUCIO LOZANO GARCÍA</string>
+	</dict>
+	<dict>
+		<key>C.P.</key>
+		<string>06140</string>
+		<key>CALLE</key>
+		<string>AVENIDA MAZATLÁN</string>
+		<key>COLONIA</key>
+		<string>CONDESA</string>
+		<key>DELEGACIÓN</key>
+		<string>CUAUHTÉMOC</string>
+		<key>NOMBRE</key>
+		<string>RADIO TAXI, SITIO 153 DEL DISTRITO FEDERAL, A.C.</string>
+		<key>NUMERO</key>
+		<string></string>
+		<key>TEL</key>
+		<string>56746120</string>
+		<key>UBICACION</key>
+		<string>19.413425, -99.177640</string>
+		<key>RESPONSABLE</key>
+		<string>JAVIER VALADEZ PÉREZ</string>
+	</dict>
+	<dict>
+		<key>C.P.</key>
+		<string>06770</string>
+		<key>CALLE</key>
+		<string>TLACOTLALPAN</string>
+		<key>COLONIA</key>
+		<string>ROMA SUR</string>
+		<key>DELEGACIÓN</key>
+		<string>CUAUHTÉMOC</string>
+		<key>NOMBRE</key>
+		<string>SITIO MEGA 2000, A.C.</string>
+		<key>NUMERO</key>
+		<string></string>
+		<key>TEL</key>
+		<string>55989522</string>
+		<key>UBICACION</key>
+		<string>19.408083, -99.166878</string>
+		<key>RESPONSABLE</key>
+		<string>ABEL MEJIA GARCÍA</string>
+	</dict>
+	<dict>
+		<key>C.P.</key>
+		<string>14370</string>
+		<key>CALLE</key>
+		<string>LA CALZADA DE TLALPAN,</string>
+		<key>COLONIA</key>
+		<string>SAN LORENZO HUIPULCO</string>
+		<key>DELEGACIÓN</key>
+		<string>COYOACAN</string>
+		<key>NOMBRE</key>
+		<string>AGRUPACION DE TAXISTAS 4 DE OCTUBRE, A.C.</string>
+		<key>NUMERO</key>
+		<string></string>
+		<key>TEL</key>
+		<string>56176863</string>
+		<key>UBICACION</key>
+		<string>19.295889, -99.154307</string>
+		<key>RESPONSABLE</key>
+		<string>PALEMÓN LÓPEZ MARTÍNEZ</string>
+	</dict>
+	<dict>
+		<key>C.P.</key>
+		<string>04530</string>
+		<key>CALLE</key>
+		<string>AVENIDA DEL IMÁN </string>
+		<key>COLONIA</key>
+		<string>CUICUILCO</string>
+		<key>DELEGACIÓN</key>
+		<string>COYOACAN</string>
+		<key>NOMBRE</key>
+		<string>AGRUPACION DE TAXIS IMAN, A.C.</string>
+		<key>NUMERO</key>
+		<string>1</string>
+		<key>TEL</key>
+		<string>51714998</string>
+		<key>UBICACION</key>
+		<string>19.300852, -99.153357</string>
+		<key>RESPONSABLE</key>
+		<string>ALFREDO VELÁZQUEZ OLIVER</string>
+	</dict>
+	<dict>
+		<key>C.P.</key>
+		<string>04000</string>
+		<key>CALLE</key>
+		<string>FELIPE CARRILLO PUERTO</string>
+		<key>COLONIA</key>
+		<string>VILLA COYOACAN</string>
+		<key>DELEGACIÓN</key>
+		<string>COYOACAN</string>
+		<key>NOMBRE</key>
+		<string>BASE DE TAXIS EL RODEO COYOACAN, A.C.</string>
+		<key>NUMERO</key>
+		<string></string>
+		<key>TEL</key>
+		<string>58499191</string>
+		<key>UBICACION</key>
+		<string>19.351066, -99.162626</string>
+		<key>RESPONSABLE</key>
+		<string>LÁZARO CARRILLO LÓPEZ</string>
+	</dict>
+	<dict>
+		<key>C.P.</key>
+		<string>04120</string>
+		<key>CALLE</key>
+		<string>AVENIDA TAXQUEÑA NÚMERO </string>
+		<key>COLONIA</key>
+		<string>CHURUBUSCO COUNTRY CLUB</string>
+		<key>DELEGACIÓN</key>
+		<string>COYOACAN</string>
+		<key>NOMBRE</key>
+		<string>ALIANZA DE SITIOS DE TAXIS EN TERMINALES DE AUTOBUSES FORANEOS, A.C.</string>
+		<key>NUMERO</key>
+		<string>1320</string>
+		<key>TEL</key>
+		<string>53552104</string>
+		<key>UBICACION</key>
+		<string>19.352698, -99.143267</string>
+		<key>RESPONSABLE</key>
+		<string>RAMÓN PARRAZAL PÉREZ</string>
+	</dict>
+	<dict>
+		<key>C.P.</key>
+		<string>04360</string>
+		<key>CALLE</key>
+		<string>AVENIDA ANTONIO DELFÍN MADRIGAL</string>
+		<key>COLONIA</key>
+		<string>COPILCO EL ALTO</string>
+		<key>DELEGACIÓN</key>
+		<string>COYOACAN</string>
+		<key>NOMBRE</key>
+		<string>ASOCIACION DE TAXISTAS EL PUMITA, A.C.</string>
+		<key>NUMERO</key>
+		<string></string>
+		<key>TEL</key>
+		<string>56580139</string>
+		<key>UBICACION</key>
+		<string>19.333000, -99.173809</string>
+		<key>RESPONSABLE</key>
+		<string>JANIO MARTÍN VALENCIA ÓRNELAS</string>
+	</dict>
+	<dict>
+		<key>C.P.</key>
+		<string>04620</string>
+		<key>CALLE</key>
+		<string>DIVISIÓN DEL NORTE</string>
+		<key>COLONIA</key>
+		<string>SAN PABLO TEPETLAPA</string>
+		<key>DELEGACIÓN</key>
+		<string>COYOACAN</string>
+		<key>NOMBRE</key>
+		<string>BASE DE TAXIS TAXISUR #35, A.C.</string>
+		<key>NUMERO</key>
+		<string>60</string>
+		<key>TEL</key>
+		<string>54213132</string>
+		<key>UBICACION</key>
+		<string>19.331865, -99.126185</string>
+		<key>RESPONSABLE</key>
+		<string>VALENTÍN RAMÍREZ MARTÍNEZ</string>
+	</dict>
+	<dict>
+		<key>C.P.</key>
+		<string>04260</string>
+		<key>CALLE</key>
+		<string>CALZADA TAXQUEÑA</string>
+		<key>COLONIA</key>
+		<string>COLONIA AMPLIACIÓN SAN FRANCISCO CULHUACAN</string>
+		<key>DELEGACIÓN</key>
+		<string>COYOACAN</string>
+		<key>NOMBRE</key>
+		<string>AGRUPACION DE MINI TAXIS RECLUSORIO SUR SITIO 242, A.C.</string>
+		<key>NUMERO</key>
+		<string></string>
+		<key>TEL</key>
+		<string>56846391</string>
+		<key>UBICACION</key>
+		<string>19.338667, -99.117910</string>
+		<key>RESPONSABLE</key>
+		<string>ANTONIO FLORES MONROY</string>
+	</dict>
+	<dict>
+		<key>C.P.</key>
+		<string>04100</string>
+		<key>CALLE</key>
+		<string>BELISARIO DOMÍNGUEZ</string>
+		<key>COLONIA</key>
+		<string>DEL CARMEN</string>
+		<key>DELEGACIÓN</key>
+		<string>COYOACAN</string>
+		<key>NOMBRE</key>
+		<string>BASE MONUMENTO ALVARO OBREGON, A.C.</string>
+		<key>NUMERO</key>
+		<string></string>
+		<key>TEL</key>
+		<string>55507094</string>
+		<key>UBICACION</key>
+		<string>19.351849, -99.165249</string>
+		<key>RESPONSABLE</key>
+		<string>ENRIQUE ROSAS SALGADO</string>
+	</dict>
+	<dict>
+		<key>C.P.</key>
+		<string>04310</string>
+		<key>CALLE</key>
+		<string>MELCHOR OCAMPO</string>
+		<key>COLONIA</key>
+		<string>MONTE DE PIEDAD</string>
+		<key>DELEGACIÓN</key>
+		<string>COYOACAN</string>
+		<key>NOMBRE</key>
+		<string>FRENTE DE TRANSPORTISTAS ORGANIZADO, A.C.</string>
+		<key>NUMERO</key>
+		<string></string>
+		<key>TEL</key>
+		<string>44344966</string>
+		<key>UBICACION</key>
+		<string>19.345547, -99.171076</string>
+		<key>RESPONSABLE</key>
+		<string>ROBERTO RODRÍGUEZ RIVERA</string>
+	</dict>
+	<dict>
+		<key>C.P.</key>
+		<string>04830</string>
+		<key>CALLE</key>
+		<string>CALZADA DE LA VIRGEN</string>
+		<key>COLONIA</key>
+		<string>SECRETARIA DE MARINA</string>
+		<key>DELEGACIÓN</key>
+		<string>COYOACAN</string>
+		<key>NOMBRE</key>
+		<string>ASOCIACION DE TAXISTAS COYOTES ANCLA, A.C.</string>
+		<key>NUMERO</key>
+		<string></string>
+		<key>TEL</key>
+		<string>56000299</string>
+		<key>UBICACION</key>
+		<string>19.320973, -99.111048</string>
+		<key>RESPONSABLE</key>
+		<string>ADOLFO RAMÍREZ GALLEGOS</string>
+	</dict>
+	<dict>
+		<key>C.P.</key>
+		<string>04200</string>
+		<key>CALLE</key>
+		<string>AVENIDA TAXQUEÑA NÚMERO</string>
+		<key>COLONIA</key>
+		<string> CAMPESTRE CHURUBUSCO</string>
+		<key>DELEGACIÓN</key>
+		<string>COYOACAN</string>
+		<key>NOMBRE</key>
+		<string>SITIO DE AUTOMOVILES DE ALQUILER 119 EN TERMINALES DE AUTOBUSES FORANEOS EN EL DISTRITO FEDERAL, A.C.</string>
+		<key>NUMERO</key>
+		<string>1320</string>
+		<key>TEL</key>
+		<string>57192342</string>
+		<key>UBICACION</key>
+		<string>19.341747, -99.143212</string>
+		<key>RESPONSABLE</key>
+		<string>FRANCISCO MAYA SOTO</string>
+	</dict>
+</array>
+</plist>

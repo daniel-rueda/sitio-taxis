@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2088649415FCF526008F2A5F /* addressOut.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2088649315FCF526008F2A5F /* addressOut.plist */; };
+		2088649915FCF5E5008F2A5F /* DRLoadAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = 2088649815FCF5E5008F2A5F /* DRLoadAddress.m */; };
 		AF03795815FB9D35000AFF7A /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = AF03795715FB9D35000AFF7A /* Icon.png */; };
 		AF03795A15FB9F27000AFF7A /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AF03795915FB9F27000AFF7A /* Icon@2x.png */; };
 		AF0BF59B15FBF19400A851B3 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = AF0BF59A15FBF19400A851B3 /* Default.png */; };
@@ -147,6 +149,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2088649315FCF526008F2A5F /* addressOut.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = addressOut.plist; sourceTree = "<group>"; };
+		2088649715FCF5E5008F2A5F /* DRLoadAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRLoadAddress.h; sourceTree = "<group>"; };
+		2088649815FCF5E5008F2A5F /* DRLoadAddress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRLoadAddress.m; sourceTree = "<group>"; };
 		AF03795715FB9D35000AFF7A /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		AF03795915FB9F27000AFF7A /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		AF0BF59A15FBF19400A851B3 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
@@ -288,6 +293,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2088649615FCF52B008F2A5F /* DireccionesPlist */ = {
+			isa = PBXGroup;
+			children = (
+				2088649315FCF526008F2A5F /* addressOut.plist */,
+				2088649715FCF5E5008F2A5F /* DRLoadAddress.h */,
+				2088649815FCF5E5008F2A5F /* DRLoadAddress.m */,
+			);
+			name = DireccionesPlist;
+			sourceTree = "<group>";
+		};
 		AF6C89F215FB096A00750273 /* Custom classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -422,6 +437,7 @@
 		AFC2E16115FAD923009A9E23 /* SitioTaxis */ = {
 			isa = PBXGroup;
 			children = (
+				2088649615FCF52B008F2A5F /* DireccionesPlist */,
 				D3DF035415FBA7D9005422EE /* Plists */,
 				D3DF034815FB9D93005422EE /* Resources */,
 				AF6C89F815FB099A00750273 /* Data model */,
@@ -676,6 +692,7 @@
 				D3376F7815FC401200478CA0 /* telefono@2x.png in Resources */,
 				D3376F7B15FC417300478CA0 /* direccion.png in Resources */,
 				D3376F7C15FC417300478CA0 /* direccion@2x.png in Resources */,
+				2088649415FCF526008F2A5F /* addressOut.plist in Resources */,
 				AFAE457D15FCEEFF00832EA7 /* imagen_comentario.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -705,6 +722,7 @@
 				D39BF63A15FBEFA500FFDD2D /* DRMapAndTableViewController.m in Sources */,
 				AF68F5E115FC150C00D824F7 /* DRComentariosTableViewController.m in Sources */,
 				D3376F3F15FC16E600478CA0 /* DRDetailSitioViewController.m in Sources */,
+				2088649915FCF5E5008F2A5F /* DRLoadAddress.m in Sources */,
 				AFAE457A15FCEDD200832EA7 /* MessageTableViewCell.m in Sources */,
 				AFAE457B15FCEDD200832EA7 /* SpeechBubbleView.m in Sources */,
 			);
