@@ -15,6 +15,7 @@
 		AF68F5DC15FC12BD00D824F7 /* lista_tabIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AF68F5D815FC12BD00D824F7 /* lista_tabIcon@2x.png */; };
 		AF68F5DD15FC12BD00D824F7 /* mapa_tabIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = AF68F5D915FC12BD00D824F7 /* mapa_tabIcon.png */; };
 		AF68F5DE15FC12BD00D824F7 /* mapa_tabIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AF68F5DA15FC12BD00D824F7 /* mapa_tabIcon@2x.png */; };
+		AF68F5E115FC150C00D824F7 /* DRComentariosTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF68F5E015FC150C00D824F7 /* DRComentariosTableViewController.m */; };
 		AF6C89FB15FB09E100750273 /* SitioTaxis.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AF6C89F915FB09E100750273 /* SitioTaxis.xcdatamodeld */; };
 		AF6C89FE15FB0E1100750273 /* Sitio.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6C89FD15FB0E1100750273 /* Sitio.m */; };
 		AF6C8A0115FB0E1200750273 /* Telefono.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6C8A0015FB0E1200750273 /* Telefono.m */; };
@@ -129,6 +130,8 @@
 		AF68F5D815FC12BD00D824F7 /* lista_tabIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lista_tabIcon@2x.png"; sourceTree = "<group>"; };
 		AF68F5D915FC12BD00D824F7 /* mapa_tabIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mapa_tabIcon.png; sourceTree = "<group>"; };
 		AF68F5DA15FC12BD00D824F7 /* mapa_tabIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mapa_tabIcon@2x.png"; sourceTree = "<group>"; };
+		AF68F5DF15FC150C00D824F7 /* DRComentariosTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRComentariosTableViewController.h; sourceTree = "<group>"; };
+		AF68F5E015FC150C00D824F7 /* DRComentariosTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRComentariosTableViewController.m; sourceTree = "<group>"; };
 		AF6C89FA15FB09E100750273 /* SitioTaxis.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SitioTaxis.xcdatamodel; sourceTree = "<group>"; };
 		AF6C89FC15FB0E1100750273 /* Sitio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sitio.h; sourceTree = "<group>"; };
 		AF6C89FD15FB0E1100750273 /* Sitio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sitio.m; sourceTree = "<group>"; };
@@ -276,6 +279,8 @@
 		AF6C89F615FB096A00750273 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				AF68F5DF15FC150C00D824F7 /* DRComentariosTableViewController.h */,
+				AF68F5E015FC150C00D824F7 /* DRComentariosTableViewController.m */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -587,6 +592,7 @@
 				AFF96A4315FB911C00B308A4 /* DRDelegacionesTableViewController.m in Sources */,
 				AFF96A4615FB931300B308A4 /* DRSitiosDelegacionTableViewController.m in Sources */,
 				D39BF63A15FBEFA500FFDD2D /* DRMapAndTableViewController.m in Sources */,
+				AF68F5E115FC150C00D824F7 /* DRComentariosTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
