@@ -51,7 +51,7 @@
     if (indexPath.row!=1) {
         cell.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"fondo-tabla"]];
     }else {
-        UIImage *image = [UIImage imageNamed:@"5estrellas"];
+        UIImage *image = [UIImage imageNamed:@"3estrellas"];
         UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
         imageView.contentMode = UIViewContentModeCenter;
         cell.backgroundView=imageView;
