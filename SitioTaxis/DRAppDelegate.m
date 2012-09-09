@@ -7,6 +7,7 @@
 //
 
 #import "DRAppDelegate.h"
+#import "DRLoadAddress.h"
 
 @implementation DRAppDelegate
 
@@ -15,6 +16,10 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    DRLoadAddress *loadAddress=[[DRLoadAddress alloc] init];
+    [loadAddress loadAddressFromPlist];
+   
     return YES;
 }
 							
@@ -44,5 +49,7 @@
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+
+
 
 @end

@@ -30,7 +30,8 @@ static DRDataModel *_sharedInstance = nil;
 {
     self = [super init];
     if (self) {
-        
+        RKManagedObjectStore *store;
+        [store save:nil];
     }
     return self;
 }
