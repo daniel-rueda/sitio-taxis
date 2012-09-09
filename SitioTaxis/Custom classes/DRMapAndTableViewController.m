@@ -38,9 +38,9 @@
     [self.mapa setShowsUserLocation:YES];
     self.title = @"Sitios";
     
-    [self.tableView setContentOffset:CGPointMake(0, self.mapa.frame.size.height)];
+    //[self.tableView setContentOffset:CGPointMake(0, self.mapa.frame.size.height)];
     _sitios = [NSArray arrayWithObjects:@"Sitio 01", @"Sitio 02", @"Sitio 03", @"Sitio 04", @"Sitio 05", @"Sitio 06", @"Sitio 07", @"Sitio 08", @"Sitio 09", @"Sitio 10", nil];
-    
+    [self.tableView reloadData];
 	// Do any additional setup after loading the view.
 }
 
