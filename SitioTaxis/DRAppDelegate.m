@@ -8,6 +8,7 @@
 
 #import "DRAppDelegate.h"
 #import "DRLoadAddress.h"
+#import "DRDataModel.h"
 
 @implementation DRAppDelegate
 
@@ -15,6 +16,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [DRDataModel sharedModel];
     // Override point for customization after application launch.
     
     DRLoadAddress *loadAddress=[[DRLoadAddress alloc] init];

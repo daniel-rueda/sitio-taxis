@@ -9,8 +9,12 @@
 #import "DRDataModel.h"
 
 @implementation DRDataModel
+@synthesize manager = _manager;
 
 static DRDataModel *_sharedInstance = nil;
+
+static NSString *baseURL = @"http://drj.mx";
+static NSString *objectStoreFilename = @"SitioTaxis.sqlite";
 
 + (DRDataModel *)sharedModel
 {
@@ -30,10 +34,15 @@ static DRDataModel *_sharedInstance = nil;
 {
     self = [super init];
     if (self) {
-        RKManagedObjectStore *store;
-        [store save:nil];
+        self.manager = [RKObjectManager objectManagerWithBaseURLString:baseURL];
+        self.manager.objectStore = [RKManagedObjectStore objectStoreWithStoreFilename:objectStoreFilename];
     }
     return self;
+}
+
+- (BOOL)saveChanges
+{
+    return [self.manager.objectStore save:nil];
 }
 
 #pragma mark - Fetching objects

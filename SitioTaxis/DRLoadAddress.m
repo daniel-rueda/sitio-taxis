@@ -33,6 +33,7 @@
             ubicacion.delegacion=[dictAddres valueForKey:@"DELEGACIÓN"];
             ubicacion.codigoPostal=[dictAddres valueForKey:@"C.P."];
             ubicacion.geoposicion=[dictAddres valueForKey:@"UBICACION"];
+            ubicacion.sitio=sitio;
         }
 
     }
