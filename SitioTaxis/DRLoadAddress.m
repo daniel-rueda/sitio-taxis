@@ -10,6 +10,7 @@
 #import "DRDataModel.h"
 #import "Sitio.h"
 #import "Ubicacion.h"
+#import "Telefono.h"
 
 @implementation DRLoadAddress
 -(void)loadAddressFromPlist
@@ -27,6 +28,13 @@
         
         for (NSDictionary *dictAddres in arrayAddress) {
             Sitio* sitio=[Sitio createEntity];
+            sitio.nombre=[dictAddres valueForKey:@"NOMBRE"];
+            
+            
+            Telefono *tel=[Telefono createEntity];
+            tel.numero=[dictAddres valueForKey:@"TEL"];
+            tel.sitio=sitio;
+            
             Ubicacion *ubicacion=[Ubicacion createEntity];
             ubicacion.calle=[dictAddres valueForKey:@"CALLE"];
             ubicacion.colonia=[dictAddres valueForKey:@"COLONIA"];
@@ -35,7 +43,9 @@
             ubicacion.geoposicion=[dictAddres valueForKey:@"UBICACION"];
             ubicacion.sitio=sitio;
         }
-
+        [[DRDataModel sharedModel] saveChanges];
+    }else{
+        NSLog(@"Ya hay datos...");
     }
         
         
